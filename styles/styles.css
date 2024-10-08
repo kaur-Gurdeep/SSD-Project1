@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+/* Box Sizing Reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
