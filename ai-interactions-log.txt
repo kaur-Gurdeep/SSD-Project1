@@ -1,0 +1,11 @@
+===== GURDEEP KAUR =====
+// Assistance from AI tool (ChatGPT):
+1. Updated the grid alignment for the "About" page using the following CSS: 
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+2. Asked for suggestions on login form colors.
+3. Took help regarding adding alt text for images.
+
+===== TRUDY =====
+
+===== IRYNA YAMPOLSKA =====
+
