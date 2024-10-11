@@ -1,22 +1,21 @@
 // JavaScript for navigation bar
 
 (function (d) {
-    // d = document
-    const body = d.body;
-    const btn = d.getElementById("menu-btn");
-  
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      body.classList.toggle("show");
-    });
-  
-    // Prevents the focus state from activating on mousedown but
-    // keeps the focus state for keyboard users
-    btn.addEventListener("mousedown", (e) => {
-      e.preventDefault();
-    });
-  })(document);
+  // d = document
+  const body = d.body;
+  const btn = d.getElementById('menu-btn');
 
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    body.classList.toggle('show');
+  });
+
+  // Prevents the focus state from activating on mousedown but
+  // keeps the focus state for keyboard users
+  btn.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+  });
+})(document);
 
 //JavaScript for Our-team page
 // Function to show information about a team member
@@ -26,7 +25,7 @@ function showInfo(name, description, imageUrl) {
   // Update the content of the team-info div
   teamInfo.innerHTML = `
             <h3>${name}</h3>
-            <img src="${imageUrl}" alt="${name}" style="width: 250px; height: auto; border-radius: 20px; margin: 10px;">
+            <img src="${imageUrl}" alt="${name}">
             <p>${description}</p>
         `;
 
@@ -49,21 +48,15 @@ document
   .addEventListener('click', function () {
     showInfo(
       'Trudy Wong',
-      "Trudy's info goes here",
-      'images/gurdeep.jpg'
+      "Trudy is interested in health and wellness. She doesn't do snow sports at Whistler, but she has tried snowboarding at Cypress and Grouse mountain in the past. She appreciates the brave and adventurous spirits of the people who do snow sports. She enjoys hiking and scenic adventurous around BC.",
+      'images/trudy.jpg'
     );
   });
 document
   .getElementById('team-member-iryna')
   .addEventListener('click', function () {
-    showInfo(
-      'Iryna Yampolska',
-      "Iryna's info goes here",
-      'images/gurdeep.jpg'
-    );
+    showInfo('Iryna Yampolska', "Iryna's info goes here", 'images/gurdeep.jpg');
   });
-
-
 
 // Simulates a click on a random element from a collection of HTMLElement with ID 'team'
 function simulateRandomClick() {
