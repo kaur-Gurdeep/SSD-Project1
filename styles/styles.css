@@ -7,128 +7,125 @@
   box-sizing: border-box;
 }
 
-body{
-  margin:0;
-  background-color: #E8F1F5;
-
+body {
+  margin: 0;
+  background-color: #e8f1f5;
 }
 
-.wrapper{
-  display:grid;
+.wrapper {
+  display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
 }
 
-.nav-bar{
-  display:grid;
+.nav-bar {
+  display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto;
-  grid-template-areas: 
-                      "logo button"
-                      "nav  nav";
+  grid-template-areas:
+    'logo button'
+    'nav  nav';
   align-items: center;
   background-color: #003366;
-  padding:20px;
+  padding: 20px;
 }
 
-header a{
+header a {
   text-decoration: none;
-  color:#D3D3D3;
+  color: #d3d3d3;
 }
 
-header h1{
+header h1 {
   grid-area: logo;
-  margin:0;
+  margin: 0;
   margin-left: 10px;
 }
-.nav-bar nav{
+.nav-bar nav {
   grid-area: nav;
   text-align: right;
-  display:none;
+  display: none;
 }
 
-.show .nav-bar nav{
-  display:block;
+.show .nav-bar nav {
+  display: block;
 }
 
-.nav-bar ul{
+.nav-bar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.nav-bar ul li{
+.nav-bar ul li {
   margin-top: 20px;
 }
 
-.nav-bar nav a{
-  padding-left:10px;
+.nav-bar nav a {
+  padding-left: 10px;
   line-height: 1.5;
   font-size: 1.2em;
-  display:block;
+  display: block;
   text-align: center;
-  transition:background-color 0.5s ease;
+  transition: background-color 0.5s ease;
 }
-.menu-btn{
+.menu-btn {
   grid-area: button;
   justify-self: end;
   margin-right: 20px;
   font-weight: bold;
 }
 .banner img {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   max-height: 400px;
   object-fit: cover; /* Ensures the image covers the space without stretching */
 }
 
 .nav-bar nav a:hover,
 .nav-bar nav a:active,
-.nav-bar nav a:focus{
+.nav-bar nav a:focus {
   background-color: rgb(136, 136, 136);
 }
 
-@media (min-width: 600px){
-  .nav-bar{
+@media (min-width: 600px) {
+  .nav-bar {
     grid-template-columns: 1fr 450px;
-    grid-template-areas: "logo nav";
+    grid-template-areas: 'logo nav';
   }
 
-  .nav-bar .menu-btn{
-    display:none;
+  .nav-bar .menu-btn {
+    display: none;
   }
-  .nav-bar nav{
+  .nav-bar nav {
     display: block;
-
   }
-  .nav-bar ul{
+  .nav-bar ul {
     display: flex;
   }
-  .nav-bar li{
-    flex:1;
+  .nav-bar li {
+    flex: 1;
   }
-  .nav-bar nav a{
-    padding:0;
+  .nav-bar nav a {
+    padding: 0;
     text-align: center;
   }
 }
 
-footer{
+footer {
   background-color: #003366;
-  color: #D3D3D3;
+  color: #d3d3d3;
   text-align: center;
 }
 
-
 /*LOGIN PAGE STYLES*/
-.login-container{
-  display:flex;
+.login-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #E8F1F5;
+  background-color: #e8f1f5;
 }
-.login-box{
+.login-box {
   background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent box */
   padding: 20px;
   border-radius: 10px;
@@ -137,11 +134,11 @@ footer{
   text-align: center;
 }
 
-.login-box h1{
+.login-box h1 {
   color: #333;
 }
-.input-box{
-  padding:10px;
+.input-box {
+  padding: 10px;
   text-align: left;
 }
 .input-box label {
@@ -159,20 +156,20 @@ footer{
 .login-btn {
   width: 100%;
   padding: 10px;
-  background-color: #003366; 
+  background-color: #003366;
   color: white;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
 }
-.login-btn:hover{
+.login-btn:hover {
   background-color: #015fbd;
 }
-.signup a{
+.signup a {
   text-decoration: none;
-  color:#007BFF;
+  color: #007bff;
 }
-.signup a:hover{
+.signup a:hover {
   text-decoration: underline;
 }
 
@@ -230,6 +227,22 @@ footer{
   padding: 2%;
 }
 
+.team-info h3 {
+  flex: 1;
+}
+
+.team-info p {
+  flex: 6;
+}
+
+.team-info img {
+  flex: 1;
+  width: 250px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 10px;
+}
 .tmember1,
 .tmember2,
 .tmember3 {
@@ -250,7 +263,9 @@ main h2 {
 }
 
 /* Grid Layout for Activities and Destinations */
-.activity-grid, .destination-grid, .seasonal-grid {
+.activity-grid,
+.destination-grid,
+.seasonal-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -258,7 +273,9 @@ main h2 {
 }
 
 /* Individual Grid Items */
-.activity, .destination, .season {
+.activity,
+.destination,
+.season {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -267,13 +284,17 @@ main h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.activity img, .destination img, .season img {
+.activity img,
+.destination img,
+.season img {
   max-width: 100%;
   height: 300px;
   border-radius: 10px;
 }
 
-.activity h3, .destination h3, .season h3 {
+.activity h3,
+.destination h3,
+.season h3 {
   margin: 15px 0 10px;
   color: #003366;
 }
