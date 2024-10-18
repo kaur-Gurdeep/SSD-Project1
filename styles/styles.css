@@ -7,7 +7,29 @@
   box-sizing: border-box;
 }
 
+/* heading font */
+h1, h2, h3 {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1em;
+}
+ul li{
+  
+  font-family: "Merriweather", serif;
+}
+
 body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
   margin: 0;
   background-color: #e8f1f5;
 }
@@ -27,7 +49,8 @@ body {
     'nav  nav';
   align-items: center;
   background-color: #003366;
-  padding: 20px;
+  /* padding: 20px; */
+  padding: 1.25rem;
 }
 
 header a {
@@ -62,7 +85,7 @@ header h1 {
 .nav-bar nav a {
   padding-left: 10px;
   line-height: 1.5;
-  font-size: 1.2em;
+  font-size: 1.1rem;
   display: block;
   text-align: center;
   transition: background-color 0.5s ease;
@@ -86,37 +109,13 @@ header h1 {
   background-color: rgb(136, 136, 136);
 }
 
-@media (min-width: 600px) {
-  .nav-bar {
-    grid-template-columns: 1fr 450px;
-    grid-template-areas: 'logo nav';
-  }
-
-  .nav-bar .menu-btn {
-    display: none;
-  }
-  .nav-bar nav {
-    display: block;
-  }
-  .nav-bar ul {
-    display: flex;
-  }
-  .nav-bar li {
-    flex: 1;
-  }
-  .nav-bar nav a {
-    padding: 0;
-    text-align: center;
-  }
-}
-
 footer {
   background-color: #003366;
   color: #d3d3d3;
   text-align: center;
 }
 
-/*LOGIN PAGE STYLES*/
+/******************LOGIN PAGE STYLES******************/
 .login-container {
   display: flex;
   flex-direction: column;
@@ -126,10 +125,10 @@ footer {
   background-color: #e8f1f5;
 }
 .login-box {
-  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent box */
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 1.25rem;
   border-radius: 10px;
-  width: 500px;
+  width:280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -158,7 +157,8 @@ footer {
   padding: 10px;
   background-color: #003366;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
+  /* font-size: 16px; */
   border-radius: 5px;
   cursor: pointer;
 }
@@ -173,28 +173,35 @@ footer {
   text-decoration: underline;
 }
 
-/*OUR TEAM PAGE STYLES*/
+/******************OUR TEAM PAGE STYLES******************/
 
 .team img {
   border-radius: 5%;
   height: 250px;
-  width: 400px;
+  width:200px;
   object-fit: cover;
-  cursor: pointer;
+  cursor: pointer; 
+  transition: transform 0.3s; /* Add a hover effect */
+}
+
+.team img:hover {
+  transform: scale(1.05); /* Scale up on hover */
 }
 
 .team {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(to bottom right, #365593, transparent);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom right, #4a6d99, transparent);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px; /* Add some padding */
 }
 
 .tmembers {
   text-align: center;
-  background: linear-gradient(167deg, #365593, transparent);
-  padding: 2%;
+  background: linear-gradient(167deg, #4a6d99, transparent); /* Softer gradient */
+  padding: 3%;
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .tmembers h2,
@@ -219,50 +226,62 @@ footer {
 
 .team-info {
   display: flex;
+  flex-direction: column; /* Change to column for small screens */
   align-items: center;
-  background-color: #e3e3e3;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  height: 250px;
+  height: auto; /* Change to auto to accommodate content */
   margin: 20px;
   padding: 2%;
 }
 
 .team-info h3 {
-  flex: 1;
+  text-align: center;
+  margin-bottom: 10px; /* Add spacing below the heading */
+  color: #1c1c1c;;
 }
 
-.team-info p {
-  flex: 6;
+.team-info #image-container {
+  width: 250px; 
+  height: 250px; 
+  overflow: hidden; /* Hide overflow if image is larger */
+  border-radius: 20px; 
+  margin: 10px auto; /* Center container */
+  border: 2px solid #4a6d99; /* Border for the image container */
 }
 
 .team-info img {
-  flex: 1;
-  width: 250px;
-  aspect-ratio: 3/2;
-  object-fit: cover;
+  width: 100%; /* Adjust width as needed */
+  height: 100%; /* Maintain aspect ratio */
   border-radius: 20px;
-  margin: 10px;
+  object-fit: cover;
+} 
+
+.team-info p {
+  color: #555;
+  display: block; /* Ensure paragraph is displayed */
+  text-align: justify;
 }
+
 .tmember1,
 .tmember2,
 .tmember3 {
   padding: 2%;
 }
 
-/* ABOUT PAGE STYLING */
+/****************** ABOUT PAGE STYLING ******************/
 main {
   padding: 20px;
   background-color: #f4f4f4;
 }
 
-/* Section Headings */
 main h2 {
   text-align: center;
   color: #003366;
   margin-bottom: 20px;
 }
 
-/* Grid Layout for Activities and Destinations */
 .activity-grid,
 .destination-grid,
 .seasonal-grid {
@@ -272,7 +291,6 @@ main h2 {
   margin-bottom: 40px;
 }
 
-/* Individual Grid Items */
 .activity,
 .destination,
 .season {
@@ -325,4 +343,63 @@ main h2 {
   margin-bottom: 10px;
   padding: 10px;
   border-left: 5px solid #003366;
+}
+
+@media (min-width: 37.5em) /*600px / 16px = 37.5em*/
+/* @media (max-width: 1920px) and (min-width: 320px)  */
+{
+  .nav-bar {
+    grid-template-columns: 1fr 450px;
+    grid-template-areas: 'logo nav';
+  }
+
+  .nav-bar .menu-btn {
+    display: none;
+  }
+  .nav-bar nav {
+    display: block;
+  }
+  .nav-bar ul {
+    display: flex;
+  }
+  .nav-bar ul li {
+    flex: 1;
+  }
+  .nav-bar nav a {
+    padding: 0;
+    text-align: center;
+  }
+
+  /****************** OUR-TEAM PAGE ******************/
+  .team-info{
+    display: flex;
+    flex-direction: row;
+  }
+  .team-info p {
+    margin: 0 20px;
+    display: block;
+    text-align: justify;
+    flex: 6; 
+  }
+  .team-info h3 {
+    text-align: center;
+    flex: 1; 
+    margin:0 10px;
+  }
+  .team-info img {
+    flex: 1;
+    width: 250px;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 20px;
+    height:100%;
+  }
+  .team img {
+    width: 400px;
+  }
+
+  /****************** LOGIN PAGE ******************/
+    .login-box {
+      width: 500px;
+    }
 }

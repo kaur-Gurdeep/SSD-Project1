@@ -20,12 +20,15 @@
 //JavaScript for Our-team page
 // Function to show information about a team member
 function showInfo(name, description, imageUrl) {
+  // const teamInfo = document.getElementById('team-info');
   const teamInfo = document.getElementById('team-info');
 
   // Update the content of the team-info div
   teamInfo.innerHTML = `
             <h3>${name}</h3>
+             <div id="image-container">
             <img src="${imageUrl}" alt="${name}">
+            </div>
             <p>${description}</p>
         `;
 
