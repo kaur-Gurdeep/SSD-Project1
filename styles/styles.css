@@ -8,8 +8,10 @@
 }
 
 /* heading font */
-h1, h2, h3 {
-  font-family: "Merriweather", serif;
+h1,
+h2,
+h3 {
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
@@ -17,14 +19,13 @@ h1 {
 }
 
 p {
-  font-family: "Merriweather", serif;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
   line-height: 1.4;
   font-size: 1em;
 }
-ul li{
-  
-  font-family: "Merriweather", serif;
+ul li {
+  font-family: 'Merriweather', serif;
 }
 
 body {
@@ -49,20 +50,21 @@ body {
     'nav  nav';
   align-items: center;
   background-color: #003366;
-  /* padding: 20px; */
-  padding: 1.25rem;
+  padding: 0rem 1.25rem;
 }
 
 header a {
   text-decoration: none;
   color: #d3d3d3;
+  line-height: 60px; /* setting explicit height - to know the full nav height with padding */
 }
 
-header h1 {
+header p {
   grid-area: logo;
   margin: 0;
   margin-left: 10px;
 }
+
 .nav-bar nav {
   grid-area: nav;
   text-align: right;
@@ -78,8 +80,23 @@ header h1 {
   margin: 0;
   padding: 0;
 }
+
 .nav-bar ul li {
   margin-top: 20px;
+}
+
+.nav-bar ul li:last-child {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 70px;
+  justify-self: center;
+}
+
+.nav-bar ul li:last-child a {
+  background-color: var(--primary-neon-blue);
+  border-radius: 0.25rem;
+  padding: 0 0.15rem;
+  color: var(--primary-black);
 }
 
 .nav-bar nav a {
@@ -125,10 +142,10 @@ footer {
   background-color: #e8f1f5;
 }
 .login-box {
-  background-color: rgba(255, 255, 255, 0.9); 
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1.25rem;
   border-radius: 10px;
-  width:280px;
+  width: 280px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
@@ -178,9 +195,9 @@ footer {
 .team img {
   border-radius: 5%;
   height: 250px;
-  width:200px;
+  width: 200px;
   object-fit: cover;
-  cursor: pointer; 
+  cursor: pointer;
   transition: transform 0.3s; /* Add a hover effect */
 }
 
@@ -199,7 +216,11 @@ footer {
 
 .tmembers {
   text-align: center;
-  background: linear-gradient(167deg, #4a6d99, transparent); /* Softer gradient */
+  background: linear-gradient(
+    167deg,
+    #4a6d99,
+    transparent
+  ); /* Softer gradient */
   padding: 3%;
   border-radius: 10px; /* Add rounded corners */
 }
@@ -239,14 +260,14 @@ footer {
 .team-info h3 {
   text-align: center;
   margin-bottom: 10px; /* Add spacing below the heading */
-  color: #1c1c1c;;
+  color: #1c1c1c;
 }
 
 .team-info #image-container {
-  width: 250px; 
-  height: 250px; 
+  width: 250px;
+  height: 250px;
   overflow: hidden; /* Hide overflow if image is larger */
-  border-radius: 20px; 
+  border-radius: 20px;
   margin: 10px auto; /* Center container */
   border: 2px solid #4a6d99; /* Border for the image container */
 }
@@ -256,7 +277,7 @@ footer {
   height: 100%; /* Maintain aspect ratio */
   border-radius: 20px;
   object-fit: cover;
-} 
+}
 
 .team-info p {
   color: #555;
@@ -345,9 +366,7 @@ main h2 {
   border-left: 5px solid #003366;
 }
 
-@media (min-width: 37.5em) /*600px / 16px = 37.5em*/
-/* @media (max-width: 1920px) and (min-width: 320px)  */
-{
+@media (min-width: 37.5em) /*600px / 16px = 37.5em*/ /* @media (max-width: 1920px) and (min-width: 320px) */ {
   .nav-bar {
     grid-template-columns: 1fr 450px;
     grid-template-areas: 'logo nav';
@@ -362,8 +381,14 @@ main h2 {
   .nav-bar ul {
     display: flex;
   }
+  /* undo the mobile style */
   .nav-bar ul li {
     flex: 1;
+    margin-top: 0px;
+  }
+  /* undo the mobile style */
+  .nav-bar ul li:last-child {
+    margin-bottom: 0px;
   }
   .nav-bar nav a {
     padding: 0;
@@ -371,7 +396,7 @@ main h2 {
   }
 
   /****************** OUR-TEAM PAGE ******************/
-  .team-info{
+  .team-info {
     display: flex;
     flex-direction: row;
   }
@@ -379,12 +404,12 @@ main h2 {
     margin: 0 20px;
     display: block;
     text-align: justify;
-    flex: 6; 
+    flex: 6;
   }
   .team-info h3 {
     text-align: center;
-    flex: 1; 
-    margin:0 10px;
+    flex: 1;
+    margin: 0 10px;
   }
   .team-info img {
     flex: 1;
@@ -392,14 +417,193 @@ main h2 {
     aspect-ratio: 3/2;
     object-fit: cover;
     border-radius: 20px;
-    height:100%;
+    height: 100%;
   }
   .team img {
     width: 400px;
   }
 
   /****************** LOGIN PAGE ******************/
-    .login-box {
-      width: 500px;
+  .login-box {
+    width: 500px;
+  }
+
+  /****************** HOME PAGE ******************/
+  .barlow-condensed-regular {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .barlow-condensed-medium {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .barlow-regular {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .climate-crisis-2000 {
+    font-family: 'Climate Crisis', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'YEAR' 2000;
+  }
+
+  :root {
+    --primary-black: #222222;
+    --primary-neon-green: #c7fe46;
+    --primary-neon-blue: #3edfd4;
+    --primary-medium-blue: #2723ff;
+    --title-stroke-width: 0.2rem;
+    --title-stroke-width-neg: -0.2rem;
+    --banner-desktop-height: 600px;
+    --nav-desktop-height: 60px;
+  }
+
+  .index header h1 {
+    grid-area: logo;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  main h1 span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 4rem;
+    color: var(--primary-neon-green);
+    padding-left: 10px;
+  }
+
+  .title-black-box {
+    padding-top: 0.5rem;
+    background-color: var(--primary-black);
+  }
+
+  .title-whistler {
+    font-family: 'Climate Crisis', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'YEAR' 2000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-black);
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  .title-festival {
+    font-family: 'Climate Crisis', serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: 'YEAR' 2000;
+    text-transform: uppercase;
+    color: var(--primary-black);
+    text-shadow: var(--title-stroke-width-neg) var(--title-stroke-width-neg) 0
+        var(--primary-neon-green),
+      var(--title-stroke-width) var(--title-stroke-width-neg) 0
+        var(--primary-neon-green),
+      var(--title-stroke-width-neg) var(--title-stroke-width) 0
+        var(--primary-neon-green),
+      var(--title-stroke-width) var(--title-stroke-width) 0
+        var(--primary-neon-green);
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  /****************** new nav ******************/
+  /* is 60px on desktop */
+  header {
+    /* todo: */
+    /* height: 100px; */
+    /* overflow: hidden; */
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  header p,
+  header a {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: uppercase;
+  }
+
+  /****************** HOME PAGE ******************/
+  .banner {
+    position: absolute;
+    height: var(--banner-desktop-height);
+    width: 100%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .banner h1 {
+    position: absolute;
+    width: 100vw;
+    /* top: calc(200px + 100px); */
+    bottom: 0;
+    /* display: none; */
+    z-index: 2;
+    margin: 0;
+  }
+
+  .banner-img {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-image: url('../images/index/skiiers1.jpg');
+    background-size: cover;
+    z-index: 1;
+  }
+  .banner img {
+    position: absolute;
+    height: 100vh;
+    /* width: 100vw; */
+    background-position: center;
+    background-image: url('images/index/skiiers1.jpg');
+    object-fit: cover; /* Ensures the image covers the space without stretching */
+    /* overflow: hidden; */
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .index-content {
+    z-index: 0;
+    margin-top: var(--banner-desktop-height);
+  }
+
+  h2 .highlight {
+  }
+
+  .home-container {
+    text-align: left;
+    padding: 0px;
+    z-index: 5;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      text-align: left;
     }
+  }
 }
