@@ -56,7 +56,6 @@ body {
 header a {
   text-decoration: none;
   color: #d3d3d3;
-  line-height: 60px; /* setting explicit height - to know the full nav height with padding */
 }
 
 header p {
@@ -94,8 +93,8 @@ header p {
 
 .nav-bar ul li:last-child a {
   background-color: var(--primary-neon-blue);
-  border-radius: 0.25rem;
-  padding: 0 0.15rem;
+  border-radius: 0.15rem;
+  padding: 0.3rem;
   color: var(--primary-black);
 }
 
@@ -380,6 +379,7 @@ main h2 {
   }
   .nav-bar ul {
     display: flex;
+    align-items: center;
   }
   /* undo the mobile style */
   .nav-bar ul li {
@@ -389,6 +389,7 @@ main h2 {
   /* undo the mobile style */
   .nav-bar ul li:last-child {
     margin-bottom: 0px;
+    margin-left: 2rem;
   }
   .nav-bar nav a {
     padding: 0;
@@ -427,183 +428,540 @@ main h2 {
   .login-box {
     width: 500px;
   }
+}
 
-  /****************** HOME PAGE ******************/
-  .barlow-condensed-regular {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+/****************** HOME PAGE ******************/
+.barlow-condensed-regular {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .barlow-condensed-medium {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
+.barlow-condensed-medium {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-  .barlow-regular {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.barlow-regular {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .climate-crisis-2000 {
-    font-family: 'Climate Crisis', serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'YEAR' 2000;
-  }
+.climate-crisis-2000 {
+  font-family: 'Climate Crisis', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YEAR' 2000;
+}
 
-  :root {
-    --primary-black: #222222;
-    --primary-neon-green: #c7fe46;
-    --primary-neon-blue: #3edfd4;
-    --primary-medium-blue: #2723ff;
-    --title-stroke-width: 0.2rem;
-    --title-stroke-width-neg: -0.2rem;
-    --banner-desktop-height: 600px;
-    --nav-desktop-height: 60px;
-  }
+:root {
+  --primary-black: #222222;
+  --primary-neon-green: #c7fe46;
+  --primary-neon-blue: #3edfd4;
+  --primary-medium-blue: #2723ff;
+  --primary-white: #ffffff;
+  --title-stroke-width: 0.2rem;
+  --title-stroke-width-neg: -0.2rem;
+  --banner-desktop-height: 600px;
+  --nav-desktop-height: 60px;
+}
 
-  .index header h1 {
-    grid-area: logo;
-    padding-left: 0px;
-    margin-left: 0px;
-  }
+.index header h1 {
+  grid-area: logo;
+  padding-left: 0px;
+  margin-left: 0px;
+}
 
-  main h1 span {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-style: italic;
-    text-transform: uppercase;
-    font-size: 5rem;
-    line-height: 4rem;
-    color: var(--primary-neon-green);
-    padding-left: 10px;
-  }
+main h1 span {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 5rem;
+  line-height: 4rem;
+  color: var(--primary-neon-green);
+  padding-left: 10px;
+}
 
-  .title-black-box {
-    padding-top: 0.5rem;
-    background-color: var(--primary-black);
-  }
+.title-black-box {
+  padding-top: 0.5rem;
+  background-color: var(--primary-black);
+}
 
-  .title-whistler {
-    font-family: 'Climate Crisis', serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'YEAR' 2000;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--primary-black);
-    font-size: 4rem;
-    line-height: 3rem;
-  }
+.title-whistler {
+  font-family: 'Climate Crisis', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YEAR' 2000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-black);
+  font-size: 4rem;
+  line-height: 3rem;
+}
 
-  .title-festival {
-    font-family: 'Climate Crisis', serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: 'YEAR' 2000;
-    text-transform: uppercase;
-    color: var(--primary-black);
-    text-shadow: var(--title-stroke-width-neg) var(--title-stroke-width-neg) 0
-        var(--primary-neon-green),
-      var(--title-stroke-width) var(--title-stroke-width-neg) 0
-        var(--primary-neon-green),
-      var(--title-stroke-width-neg) var(--title-stroke-width) 0
-        var(--primary-neon-green),
-      var(--title-stroke-width) var(--title-stroke-width) 0
-        var(--primary-neon-green);
-    font-size: 2rem;
-    letter-spacing: 0.3rem;
-  }
+.title-festival {
+  font-family: 'Climate Crisis', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YEAR' 2000;
+  text-transform: uppercase;
+  color: var(--primary-black);
+  text-shadow: var(--title-stroke-width-neg) var(--title-stroke-width-neg) 0
+      var(--primary-neon-green),
+    var(--title-stroke-width) var(--title-stroke-width-neg) 0
+      var(--primary-neon-green),
+    var(--title-stroke-width-neg) var(--title-stroke-width) 0
+      var(--primary-neon-green),
+    var(--title-stroke-width) var(--title-stroke-width) 0
+      var(--primary-neon-green);
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
 
-  h1 span {
-    display: block;
-  }
+h1 span {
+  display: block;
+}
 
-  /****************** new nav ******************/
-  /* is 60px on desktop */
-  header {
-    /* todo: */
-    /* height: 100px; */
-    /* overflow: hidden; */
-    z-index: 10;
-    position: absolute;
-    width: 100%;
-    top: 0;
-  }
+.highlight-outline {
+  font-family: 'Climate Crisis', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'YEAR' 2000;
+  text-transform: uppercase;
+  text-shadow: var(--title-stroke-width-neg) var(--title-stroke-width-neg) 0
+      var(--primary-black),
+    var(--title-stroke-width) var(--title-stroke-width-neg) 0
+      var(--primary-black),
+    var(--title-stroke-width-neg) var(--title-stroke-width) 0
+      var(--primary-black),
+    var(--title-stroke-width) var(--title-stroke-width) 0 var(--primary-black);
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
 
-  header p,
-  header a {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 700;
-    font-style: bold;
-    text-transform: uppercase;
-  }
+/****************** new nav ******************/
+/* is 60px on desktop */
+header {
+  /* todo: */
+  /* height: 100px; */
+  /* overflow: hidden; */
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
 
-  /****************** HOME PAGE ******************/
-  .banner {
-    position: absolute;
-    height: var(--banner-desktop-height);
-    width: 100%;
-    z-index: 1;
-    top: 0;
-  }
+/* todo: atm diff on other pages */
+.nav-bar {
+  background-color: var(--primary-black);
+}
 
-  .banner h1 {
-    position: absolute;
-    width: 100vw;
-    /* top: calc(200px + 100px); */
-    bottom: 0;
-    /* display: none; */
-    z-index: 2;
-    margin: 0;
-  }
+header p,
+header a {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  text-transform: uppercase;
+}
+/****************** sections ******************/
 
-  .banner-img {
-    position: absolute;
-    height: 100%;
-    width: 100vw;
-    background-position: center;
-    background-image: url('../images/index/skiiers1.jpg');
-    background-size: cover;
-    z-index: 1;
-  }
-  .banner img {
-    position: absolute;
-    height: 100vh;
-    /* width: 100vw; */
-    background-position: center;
-    background-image: url('images/index/skiiers1.jpg');
-    object-fit: cover; /* Ensures the image covers the space without stretching */
-    /* overflow: hidden; */
-    bottom: 0;
-    z-index: 1;
-  }
+.index-section-info {
+  background-color: var(--primary-neon-blue);
+  border-bottom: 15px solid var(--primary-black);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
-  .index-content {
-    z-index: 0;
-    margin-top: var(--banner-desktop-height);
-  }
+.index-section-about {
+  background-color: var(--primary-neon-green);
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
-  h2 .highlight {
-  }
+.index-section-activities {
+  background-color: var(--primary-black);
+  border-bottom: 15px solid var(--primary-black);
+}
 
-  .home-container {
+.index-section-team {
+  background-color: var(--primary-medium-blue);
+  color: var(--primary-white);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 1rem;
+}
+
+.home-container .index-section-about h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.home-container .index-section-activities h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-neon-blue);
+}
+
+.home-container .index-section-team h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.index-section-info,
+.index-section-about,
+.index-section-activities,
+.index-section-team,
+footer {
+  padding: 0.5rem 2rem;
+}
+
+.index-section-info span,
+.index-section-about span {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.index-section-info h2,
+.index-section-about h2,
+.index-section-activities h2,
+.index-section-team h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: var(--primary-black);
+}
+
+.index-section-info h2,
+.index-section-info p {
+  grid-column: span 3;
+}
+
+.index-section-activities h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--primary-white);
+  margin: 0.5rem 0;
+}
+
+.tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  text-transform: uppercase;
+  color: var(--primary-black);
+  background-color: var(--primary-neon-green);
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+}
+
+.index-section-info .highlight-outline {
+  color: var(--primary-neon-blue);
+}
+
+.index-section-about .highlight-outline {
+  color: var(--primary-neon-green);
+}
+
+.index-section-info p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.index-section-team p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+  margin: 0.5rem 0;
+}
+
+.index-section-team img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+img,
+section {
+  margin: 0;
+  border: none;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.index-section-about button {
+  background-color: var(--primary-black);
+  color: white;
+  /* justify-content: center; */
+  /* align-self: center; */
+  justify-self: center;
+}
+
+.index-section-activities button {
+  background-color: var(--primary-neon-green);
+  color: var(--primary-black);
+}
+
+.index-section-team button {
+  background-color: var(--primary-neon-blue);
+  color: var(--primary-black);
+  justify-self: center;
+}
+
+.index-section-activities > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-section-team div:first-of-type {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: 1fr;
+}
+
+.index-section-activities div:nth-of-type(2) {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-columns: subgrid;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.index-section-activities article {
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--primary-white);
+}
+
+.index-section-team div:nth-of-type(2) {
+  display: grid;
+
+  grid-column: 1/4;
+  grid-template-columns: subgrid;
+}
+
+.index-section-team div:first-of-type h2 {
+  grid-column: span 3;
+}
+
+.index-section-team div:nth-of-type(2) article {
+  grid-column: span 1;
+}
+
+/****************** HOME PAGE ******************/
+.banner {
+  position: absolute;
+  height: var(--banner-desktop-height);
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.banner h1 {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  z-index: 2;
+  margin: 0;
+}
+
+.banner-img {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  background-position: center;
+  background-image: url('../images/index/skiiers1.jpg');
+  background-size: cover;
+  z-index: 1;
+}
+.banner img {
+  position: absolute;
+  height: 100vh;
+  /* width: 100vw; */
+  background-position: center;
+  background-image: url('images/index/skiiers1.jpg');
+  object-fit: cover; /* Ensures the image covers the space without stretching */
+  /* overflow: hidden; */
+  bottom: 0;
+  z-index: 1;
+}
+
+.index-content {
+  z-index: 0;
+  margin-top: var(--banner-desktop-height);
+}
+
+.home-container {
+  text-align: left;
+  padding: 0px;
+  z-index: 5;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
     text-align: left;
-    padding: 0px;
-    z-index: 5;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-      text-align: left;
-    }
   }
+}
+
+/* todo: don't overwrite the other pages - or check */
+footer {
+  background-color: var(--primary-black);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+header .logo {
+  height: 60px;
+  width: 60px;
+  margin: 0.8rem 0;
+}
+
+footer .logo {
+  width: 54px;
+  height: 54px;
+}
+
+footer div {
+  justify-items: start;
+}
+
+footer div > div {
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+footer h5 {
+  display: inline;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--primary-neon-green);
+  margin: 0;
+  align-self: center;
+}
+
+footer h5 span {
+  display: block;
+  text-align: left;
+}
+
+footer button {
+  background-color: var(--primary-neon-blue);
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.35rem 0.5rem;
+}
+
+footer div:nth-of-type(3) a,
+footer p {
+  text-decoration: none;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--primary-white);
+  align-self: end;
+}
+
+footer div:nth-of-type(2) ul {
+  margin: 0;
+}
+
+footer div:nth-of-type(2) a {
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--primary-white);
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+footer div:nth-of-type(3) {
+  display: grid;
+  grid-template-columns: subgrid;
+  justify-items: start;
+  grid-column: span 2;
+  gap: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.socials {
+  grid-column: 1;
+  display: flex;
+  justify-self: start;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.socials img {
+  width: 24px;
+  align-items: end;
+  align-content: end;
+  align-self: flex-end;
+}
+
+footer p:last-of-type {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  padding-top: 0.5rem;
+  grid-column: span 2;
+  margin: 0;
+  text-align: left;
+}
+
+footer ul {
+  margin: 0;
 }
