@@ -423,7 +423,12 @@ main h2 {
   }
 }
 
-/****************** HOME PAGE ******************/
+/*
+  ========================================================================================
+  HOMEPAGE styles start
+  ========================================================================================
+*/
+
 :root {
   --all-black: #000000;
   --primary-black: #222222;
@@ -575,7 +580,7 @@ main h1 span {
 }
 
 .home-header ul li:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   margin-left: 2rem;
 }
 
@@ -829,18 +834,6 @@ button {
   z-index: 1;
 }
 
-.home-container .banner img {
-  position: absolute;
-  height: 100vh;
-  /* width: 100vw; */
-  background-position: center;
-  background-image: url('images/index/skiiers1.jpg');
-  object-fit: cover; /* Ensures the image covers the space without stretching */
-  /* overflow: hidden; */
-  bottom: 0;
-  z-index: 1;
-}
-
 .index-content {
   z-index: 0;
   margin-top: var(--banner-desktop-height);
@@ -995,11 +988,17 @@ button {
 }
 
 /* 
+  ========================================================================================
   Desktop styles
+  ========================================================================================
 */
 
-/* @media only screen and (max-width: 768px) { */
-@media (min-width: 768px) {
+/* using the same breakpoint as above */
+@media (min-width: 37.5em) {
+  .home-header ul li:last-child {
+    margin-bottom: 0px;
+  }
+
   .index-content {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
