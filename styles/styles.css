@@ -50,7 +50,7 @@ body {
     'nav  nav';
   align-items: center;
   background-color: #003366;
-  padding: 0rem 1.25rem;
+  padding: 1.25rem;
 }
 
 header a {
@@ -58,7 +58,7 @@ header a {
   color: #d3d3d3;
 }
 
-header p {
+header h1 {
   grid-area: logo;
   margin: 0;
   margin-left: 10px;
@@ -89,13 +89,6 @@ header p {
   text-align: center;
   width: 70px;
   justify-self: center;
-}
-
-.nav-bar ul li:last-child a {
-  background-color: var(--primary-neon-blue);
-  border-radius: 0.15rem;
-  padding: 0.3rem;
-  color: var(--primary-black);
 }
 
 .nav-bar nav a {
@@ -381,16 +374,16 @@ main h2 {
     display: flex;
     align-items: center;
   }
-  /* undo the mobile style */
+
   .nav-bar ul li {
     flex: 1;
     margin-top: 0px;
   }
-  /* undo the mobile style */
+
   .nav-bar ul li:last-child {
     margin-bottom: 0px;
-    margin-left: 2rem;
   }
+
   .nav-bar nav a {
     padding: 0;
     text-align: center;
@@ -431,32 +424,6 @@ main h2 {
 }
 
 /****************** HOME PAGE ******************/
-.barlow-condensed-regular {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.barlow-condensed-medium {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.barlow-regular {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.climate-crisis-2000 {
-  font-family: 'Climate Crisis', serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: 'YEAR' 2000;
-}
-
 :root {
   --all-black: #000000;
   --primary-black: #222222;
@@ -468,12 +435,6 @@ main h2 {
   --title-stroke-width-neg: -0.2rem;
   --banner-desktop-height: 600px;
   --nav-desktop-height: 60px;
-}
-
-.index header h1 {
-  grid-area: logo;
-  padding-left: 0px;
-  margin-left: 0px;
 }
 
 main h1 span {
@@ -525,7 +486,7 @@ main h1 span {
   letter-spacing: 0.3rem;
 }
 
-h1 span {
+.home-container h1 span {
   display: block;
 }
 
@@ -547,43 +508,78 @@ h1 span {
   letter-spacing: 0.3rem;
 }
 
-/****************** new nav ******************/
-/* is 60px on desktop */
-header {
-  /* todo: */
-  /* height: 100px; */
-  /* overflow: hidden; */
+/****************** HOMEPAGE nav ******************/
+
+.home-header {
   z-index: 10;
   position: absolute;
   width: 100%;
   top: 0;
 }
 
-/* todo: atm diff on other pages */
-.nav-bar {
+.home-header .nav-bar {
   background-color: var(--primary-black);
 }
 
-header p,
-header a {
+.home-header h1 {
+  grid-area: logo;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.home-header p,
+.home-header a {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
   font-style: bold;
   text-transform: uppercase;
 }
 
-/* start off with 0 */
 .home-container h1,
-h2,
-h3,
-h4,
-h5,
-p {
+.home-container h2,
+.home-container h3,
+.home-container h4,
+.home-container h5,
+.home-container p {
   margin: 0;
   padding: 0;
 }
 
-/****************** sections ******************/
+/****************** HOMEPAGE header ******************/
+
+.home-header {
+  padding: 0;
+}
+
+.home-header .nav-bar {
+  padding: 0rem 1.25rem;
+}
+
+.home-header .logo {
+  height: 60px;
+  width: 60px;
+  margin: 0.8rem 0;
+}
+
+.home-header ul li:last-child a {
+  background-color: var(--primary-neon-blue);
+  border-radius: 0.15rem;
+  padding: 0.3rem;
+  color: var(--primary-black);
+}
+
+.home-header header p {
+  grid-area: logo;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.home-header ul li:last-child {
+  margin-bottom: 0px;
+  margin-left: 2rem;
+}
+
+/****************** HOMEPAGE sections ******************/
 
 .index-section-info {
   background-color: var(--primary-neon-blue);
@@ -645,10 +641,6 @@ p {
 .index-section-activities,
 .index-section-team {
   padding: 2rem 2rem;
-}
-
-footer {
-  padding: 0rem 2rem 2rem 2rem;
 }
 
 .index-section-info span,
@@ -809,8 +801,9 @@ button {
   grid-column: span 1;
 }
 
-/****************** HOME PAGE ******************/
-.banner {
+/****************** HOMEPAGE ******************/
+
+.home-container .banner {
   position: absolute;
   height: var(--banner-desktop-height);
   width: 100%;
@@ -818,7 +811,7 @@ button {
   top: 0;
 }
 
-.banner h1 {
+.home-container .banner h1 {
   position: absolute;
   width: 100vw;
   bottom: 0;
@@ -826,7 +819,7 @@ button {
   margin: 0;
 }
 
-.banner-img {
+.home-container .banner-img {
   position: absolute;
   height: 100%;
   width: 100vw;
@@ -835,7 +828,8 @@ button {
   background-size: cover;
   z-index: 1;
 }
-.banner img {
+
+.home-container .banner img {
   position: absolute;
   height: 100vh;
   /* width: 100vw; */
@@ -867,41 +861,44 @@ button {
   }
 }
 
-/* todo: don't overwrite the other pages - or check */
-footer {
+.index-content > img:nth-of-type(2) {
+  display: none;
+}
+
+/****************** HOMEPAGE footer ******************/
+
+.home-footer {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.home-footer {
   background-color: var(--primary-black);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
 }
 
-header .logo {
-  height: 60px;
-  width: 60px;
-  margin: 0.8rem 0;
-}
-
-footer .logo {
+.home-footer .logo {
   width: 54px;
   height: 54px;
 }
 
-footer div {
+.home-footer div {
   justify-items: start;
 }
 
-footer div > div {
+.home-footer div > div {
   display: flex;
   gap: 0.8rem;
   margin-bottom: 1rem;
 }
 
-footer > div:nth-of-type(3),
-footer > p {
+.home-footer > div:nth-of-type(3),
+.home-footer > p {
   opacity: 0.5;
 }
 
-footer h5 {
+.home-footer h5 {
   display: inline;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
@@ -914,12 +911,12 @@ footer h5 {
   align-self: center;
 }
 
-footer h5 span {
+.home-footer h5 span {
   display: block;
   text-align: left;
 }
 
-footer button {
+.home-footer button {
   background-color: var(--primary-neon-blue);
   display: block;
   width: 100%;
@@ -927,8 +924,8 @@ footer button {
   padding: 0.35rem 0.5rem;
 }
 
-footer div:nth-of-type(3) a,
-footer p {
+.home-footer div:nth-of-type(3) a,
+.home-footer p {
   text-decoration: none;
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
@@ -937,11 +934,11 @@ footer p {
   align-self: end;
 }
 
-footer div:nth-of-type(2) ul {
+.home-footer div:nth-of-type(2) ul {
   margin: 0;
 }
 
-footer div:nth-of-type(2) a {
+.home-footer div:nth-of-type(2) a {
   text-decoration: none;
   font-family: 'Barlow Condensed', sans-serif;
   text-transform: uppercase;
@@ -951,17 +948,17 @@ footer div:nth-of-type(2) a {
   color: var(--primary-white);
 }
 
-footer ul {
+.home-footer ul {
   padding-left: 0;
 }
 
-footer ul li {
+.home-footer ul li {
   list-style-type: none;
   text-align: left;
   padding-bottom: 0.5rem;
 }
 
-footer div:nth-of-type(3) {
+.home-footer div:nth-of-type(3) {
   display: grid;
   grid-template-columns: subgrid;
   justify-items: start;
@@ -985,7 +982,7 @@ footer div:nth-of-type(3) {
   align-self: flex-end;
 }
 
-footer p:last-of-type {
+.home-footer p:last-of-type {
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   padding-top: 0.5rem;
   grid-column: span 2;
@@ -993,12 +990,8 @@ footer p:last-of-type {
   text-align: left;
 }
 
-footer ul {
+.home-footer ul {
   margin: 0;
-}
-
-.index-content > img:nth-of-type(2) {
-  display: none;
 }
 
 /* 
@@ -1182,7 +1175,7 @@ footer ul {
   }
 }
 
-/****************** Decorative ******************/
+/****************** HOMEPAGE Decorative ******************/
 
 .decorative-S-line {
   display: grid;
@@ -1194,4 +1187,13 @@ footer ul {
 
 .decorative-S-line > img {
   width: 200%;
+}
+
+.decoratve-S-blue,
+.decoratve-S-green {
+  position: absolute;
+  /* background-color: red; */
+  width: 100px;
+  top: 0;
+  z-index: 5;
 }
