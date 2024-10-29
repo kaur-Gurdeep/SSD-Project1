@@ -1,61 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Explorer - Home</title>
 
     <!-- Link to the Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
+      rel="stylesheet"
+    />
 
-    
     <!-- Link to our stylesheet -->
-    <link href = "styles/styles.css" rel ="stylesheet">
-    
+    <link href="styles/styles.css" rel="stylesheet" />
+
     <!-- Link to our javaScript -->
-    <script defer src = "scripts/script.js"></script>
-</head>
-<body>
-    <div class ="wrapper">
-        <header>
-            <div class ="nav-bar">
-            <h1><a href="#">Travel Explorer</a></h1>
-            <a href="#menu" class="menu-btn" id="menu-btn">&#9776;</a>
-            <!-- <nav id = "menu"> -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="our-team.html">Our Team</a></li>
-                    <li><a href="login.html">Login</a></li>
-                 </ul>
-            </nav>
+    <script defer src="scripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">  
+        <a href="#">          
+          <img 
+          class="logo"
+          src="images/logo.svg"
+          alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
+        </a>
+        <a href="#menu" class="menu-btn" id="menu-btn">&#9776;</a>
+        <!-- <nav id = "menu"> -->
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="our-team.html">Our Team</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--End nav bar-->
+    </header>
+
+    <main class="home-container">
+      <!-- Banner -->
+      <div class="banner">
+        <!-- Header Text -->
+        <h1>
+          <span class="title-whistler">Whistler</span>
+          <span class="title-black-box">
+            <span>Ski + </span>
+            <span>Snowboard</span>
+            <span class="title-festival">Festival</span>
+          </span>
+        </h1>
+        <!-- Header Image -->
+        <div class="banner-img"></div>
+        <!-- <img
+          src="images/index/skiiers1.jpg"
+          alt="One skier doing tricks in the air"
+        /> -->
+      </div>
+      <!--End of banner-->
+
+      <!-- Section 1 -->
+      <section class="index-content">
+        <section class="index-section-info">
+          <h2>
+            <span class="highlight-outline">Welcome</span>
+            <span>The Ultimate Winter Celebration </span>
+          </h2>
+          <p>
+            Join us at Whistler Blackcomb for the World Ski & Snowboard Festival
+            (WSSF), an exhilarating mix of action-packed sports, live music,
+            art, and culture. Whether you're here to carve the slopes or simply
+            soak up the high-energy atmosphere, this week-long celebration is
+            packed with extreme competitions, epic outdoor concerts, and
+            artistic showcases.
+          </p>
+          <p>
+            With Whistler's vibrant après-ski scene and stunning mountain
+            backdrop, there's no better place to end your winter season. Dive
+            into unforgettable adventures, from skiing and snowboarding to
+            exploring Whistler's lively spring activities.
+          </p>
+        </section>
+
+        <!-- Photo -->
+        <img src="images/index/groupofpeople.jpg"
+        alt="Group of skiiers standing and waiting on their skiis in the snow"
+        width="100%"
+        />
+
+        <!-- Section 2 -->
+        <section class="index-section-about">
+          <h2>
+            <span>Where adventurous spirits</span>
+            <span class="highlight-outline">Go all out</span>
+          </h2>
+          <button>Discover More</button>
+        </section>
+
+        <!-- Photo -->
+        <img src="images/index/snowymountains1.jpg"
+        alt="Group of skiiers standing and waiting on their skiis in the snow"
+        width="100%"
+        />
+
+             
+        <!-- Section 3 - Activities -->
+        <section class="index-section-activities">
+          <div>
+            <h2>Activities</h2>
+            <button>See All Activities</button>  
+          </div>
+
+          <div>
+            <article>
+              <img
+                src="./images/index/skiier.jpg"
+                alt="Skiier speeding by with a bloom of snow trailing behind"
+              />
+            <div>
+              <h3>Ski Race Extreme</h3>
+              <div class="tag">Skiing</div>
             </div>
-            <!--End nav bar-->
+            </article>
+            <!-- end of one activity  -->
+  
+            <article>
+              <img
+                src="./images/index/snowboarder.jpg"
+                alt="Snowboarder in flight as he is moving down a snowy slope"
+              />
+             <div>
+                <h3>Snowboard Blitz Battle</h3>
+                <div class="tag">Snowboarding</div>
+             </div>
+            </article>
+            <!-- end of one activity  -->
 
-            <div class ="banner">
-                <img src="images/banner1.jpg" 
-                     alt="Mountain biker descending a rocky trail with Whistler's snow-capped mountains in the background"/>
+            <article>
+              <img
+                src="./images/index/musicstage.jpg"
+                alt="Crowds looking at a performance on stage"
+              />
+             <div>
+              <h3>Music Concert Series</h3>
+              <div class="tag">Entertainment</div>
+             </div>
+            </article>
+            <!-- end of one activity  -->
+
+            <article>
+              <img
+                src="./images/index/theatre.jpg"
+                alt="Red empty chairs facing a theatre that is playing a movie"
+              />
+            <div>
+              <h3>72-hr Film Frenzy</h3>
+              <div class="tag">Entertainment</div>
             </div>
-            <!--End of banner-->
-        </header>
+            </article>
+            <!-- end of one activity  -->
+          </div>
+        </section>
 
+        <!-- Section 4 - Team -->
+        <section class="index-section-team">
+          <div>
+            <h2>Team</h2>
+            <button>See Details</button>
+          </div>
+          <div>
+          <article>
+            <img
+              src="./images/gurdeep.jpg"
+              alt="Gurdeep sitting on a rock at the beach"
+            />
+            <p>Gurdeep</p>
+          </article>
 
+          <article>
+            <img
+              src="./images/trudy.jpg"
+              alt="Trudy in a room of human-sized balls inside teamLabs in Tokyo"
+            />
+            <p>Trudy</p>
+          </article>
 
-<main>
-    
-</main>
+          <article>
+            <img
+              src="./images/gurdeep.jpg"
+              alt="Gurdeep sitting on a rock at the beach"
+            />
+            <p>Gurdeep</p>
+          </article>
+        </section>
 
+        <!-- final photo -->
+        <img
+            src="images/index/snowmountains2.jpg"
+            alt="Beautifully snow-covered mountains"
+            width="100%"
+          />
+      </div>
 
+      </section>
+    </main>
 
-        <footer>
-            <p>
-                &copy; 2024 Travel Explorer
-            </p>
-        </footer>
-    </div>  
-    <!--End of wrapper--> 
-</body>
+    <!-- Footer -->
+    <footer>
+      <div>
+        <div>
+          <img 
+          class="logo"
+          src="images/logo.svg"
+          alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
+          <h5>
+            <span>Whistler</span> 
+            <span>Ski + Snowboard</span> 
+            <span>Festival</span>
+        </h5>  
+        </div>
+                <!-- Socials -->
+                <div class="socials">
+                  <a href="#">
+                    <img src="images/social/instagram.svg"
+                    alt="Instagram logo" />
+                  </a>
+                  <a href="#">
+                    <img src="images/social/facebook.svg"
+                    alt="Facebook logo" />
+                  </a>
+                  <a href="#">
+                    <img src="images/social/tiktok.svg"
+                    alt="TikTok logo" />
+                  </a>
+                  <a href="#">
+                    <img src="images/social/youtube.svg"
+                    alt="Youtube logo" />
+                  </a>
+                </div>
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">Activities</a></li>
+          <li><a href="our-team.html">Team</a></li>
+          <li><button>Login</button>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+      <p>&copy; 2024 SSD Team - Gurdeep, Trudy, Iryana</p>
+    </footer>
+
+    <!--End of wrapper-->
+  </body>
 </html>
