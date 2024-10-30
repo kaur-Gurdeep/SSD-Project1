@@ -513,6 +513,11 @@ main h1 span {
   letter-spacing: 0.3rem;
 }
 
+.home-container button a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
 /****************** HOMEPAGE nav ******************/
 
 .home-header {
@@ -755,13 +760,17 @@ button {
 
 .index-section-activities button {
   background-color: var(--primary-neon-green);
-  color: var(--primary-black);
+  a {
+    color: var(--primary-black);
+  }
 }
 
 .index-section-team button {
   background-color: var(--primary-neon-blue);
-  color: var(--primary-black);
   justify-self: center;
+  a {
+    color: var(--primary-black);
+  }
 }
 
 .index-section-activities > div:first-of-type {
@@ -915,6 +924,7 @@ button {
   width: 100%;
   font-size: 1rem;
   padding: 0.35rem 0.5rem;
+  border-radius: 0.15rem;
 }
 
 .home-footer div:nth-of-type(3) a,
@@ -985,6 +995,10 @@ button {
 
 .home-footer ul {
   margin: 0;
+}
+
+.home-footer button a {
+  color: var(--primary-black) !important;
 }
 
 /* 
