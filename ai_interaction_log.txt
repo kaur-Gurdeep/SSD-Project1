@@ -1,0 +1,13 @@
+==================================================================
+Trudy
+
+1. how do I horizontally center an image in a grid and also have It clip to just contain within the vw when the image overflows past the container
+- place-items: center;
+
+2. why would a html container not be able to set a CSS style, why is there a warning icon on the devtool console element styles?
+- debugging top banner style
+
+3. how to override a user agent stylesheet?
+- look at the computed tab in DevTools
+
+==================================================================
