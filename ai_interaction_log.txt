@@ -1,3 +1,5 @@
+==================================================================
+Trudy
 
 1. how do I horizontally center an image in a grid and also have It clip to just contain within the vw when the image overflows past the container
 - place-items: center;
@@ -6,3 +8,6 @@
 - debugging top banner style
 
 3. how to override a user agent stylesheet?
+- look at the computed tab in DevTools
+
+==================================================================
