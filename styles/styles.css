@@ -1047,6 +1047,34 @@ img.decorative-S-blue {
   right: 0;
 }
 
+/* mobile */
+.index-container {
+  background-image: url('../images/index/snowmountains2.jpg');
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.index-container h1 {
+  font-size: 5rem;
+}
+
+.index-container article {
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.index-container button {
+  background-color: #003366;
+}
+
+.index-container a {
+  text-decoration: none;
+  color: white;
+}
+
 /* 
   ========================================================================================
   Desktop styles
@@ -1139,32 +1167,13 @@ img.decorative-S-blue {
     align-self: start;
   }
 
+  /* desktop */
   .index-container {
     background-image: url('../images/index/snowmountains2.jpg');
     background-size: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     width: 100%;
-  }
-
-  .index-container h1 {
-    font-size: 5rem;
-  }
-
-  .index-container article {
-    width: 100%;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-  }
-
-  .index-container button {
-    background-color: #003366;
-  }
-
-  .index-container a {
-    text-decoration: none;
-    color: white;
   }
 
   .home-container .index-section-about h2 {
@@ -1278,5 +1287,12 @@ img.decorative-S-blue {
     max-width: 400px;
     margin-right: calc(-30vw / 1.5);
     right: 0;
+  }
+}
+
+@media (min-width: 30em) {
+  .index-container {
+    background-size: 80rem;
+    background-color: #003366;
   }
 }
