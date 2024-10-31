@@ -105,17 +105,66 @@ header h1 {
   margin-right: 20px;
   font-weight: bold;
 }
-.banner img {
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: cover; /* Ensures the image covers the space without stretching */
-}
 
+ main.index-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  flex-grow: 1;
+}
+.index-container article {
+  max-width: 800px;
+}
+.index-container h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.index-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.index-container button {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.index-container button a {
+  text-decoration: none;
+  color: orangered;
+}
+.index-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}  
 .nav-bar nav a:hover,
 .nav-bar nav a:active,
 .nav-bar nav a:focus {
   background-color: rgb(136, 136, 136);
+}
+.eventLink {
+  background-color: orangered;
+  color: white; 
+  padding: 10px 15px; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+.eventLink:hover {
+  background-color: #ff4500;
 }
 
 footer {
@@ -203,7 +252,7 @@ footer {
   justify-content: center;
   background: linear-gradient(to bottom right, #4a6d99, transparent);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  padding: 20px; /* Add some padding */
+  padding: 20px;
 }
 
 .tmembers {
@@ -214,7 +263,7 @@ footer {
     transparent
   ); /* Softer gradient */
   padding: 3%;
-  border-radius: 10px; /* Add rounded corners */
+  border-radius: 10px; 
 }
 
 .tmembers h2,
@@ -422,6 +471,17 @@ main h2 {
     width: 500px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /*
   ========================================================================================
@@ -1050,7 +1110,7 @@ img.decorative-S-blue {
 }
 
 /* mobile */
-.index-container {
+/* .index-container {
   background-image: url('../images/index/snowmountains2.jpg');
   background-size: 50rem;
   background-repeat: no-repeat;
@@ -1075,7 +1135,7 @@ img.decorative-S-blue {
 .index-container a {
   text-decoration: none;
   color: white;
-}
+} */
 
 /* 
   ========================================================================================
@@ -1170,13 +1230,13 @@ img.decorative-S-blue {
   }
 
   /* desktop */
-  .index-container {
+  /* .index-container {
     background-image: url('../images/index/snowmountains2.jpg');
     background-size: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     display: flex;
     width: 100%;
-  }
+  } */
 
   .home-container .index-section-about h2 {
     text-align: left;
@@ -1292,9 +1352,11 @@ img.decorative-S-blue {
   }
 }
 
-@media (min-width: 30em) {
+/* @media (min-width: 30em) {
   .index-container {
     background-size: 80rem;
     background-color: #003366;
   }
-}
+} */
+
+
