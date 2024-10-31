@@ -529,6 +529,8 @@ main h1 span {
 
 .home-header .nav-bar {
   background-color: var(--primary-black);
+  position: fixed;
+  width: 100vw;
 }
 
 .home-header h1 {
