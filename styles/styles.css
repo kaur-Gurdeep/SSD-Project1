@@ -572,10 +572,10 @@ main h1 span {
 }
 
 .home-header ul li:last-child a {
-  background-color: var(--primary-neon-blue);
+  /* background-color: var(--primary-neon-blue);
   border-radius: 0.15rem;
   padding: 0.3rem;
-  color: var(--primary-black);
+  color: var(--primary-black); */
 }
 
 .home-header header p {
@@ -585,8 +585,8 @@ main h1 span {
 }
 
 .home-header ul li:last-child {
-  margin-bottom: 20px;
-  margin-left: 2rem;
+  /* margin-bottom: 20px;
+  margin-left: 2rem; */
 }
 
 /****************** HOMEPAGE sections ******************/
@@ -987,11 +987,11 @@ button {
 }
 
 .home-footer p:last-of-type {
-  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  /* border-top: 2px solid rgba(255, 255, 255, 0.5);
   padding-top: 0.5rem;
   grid-column: span 2;
   margin: 0;
-  text-align: left;
+  text-align: left; */
 }
 
 .home-footer ul {
@@ -1043,7 +1043,7 @@ img.decorative-S-blue {
 /* using the same breakpoint as above */
 @media (min-width: 37.5em) {
   .home-header ul li:last-child {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
   }
 
   .index-content {
