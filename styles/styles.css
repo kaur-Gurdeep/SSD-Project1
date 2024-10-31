@@ -501,14 +501,14 @@ main h2 {
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: calc(3rem + 5vw);
+  line-height: calc(3rem + 3vw);
   color: var(--primary-neon-green);
   padding-left: 0.8rem;
 }
 
 .title-black-box {
-  padding-top: 0.5rem;
+  padding-top: 2vw;
   background-color: var(--primary-black);
 }
 
@@ -543,7 +543,8 @@ main h2 {
       var(--primary-neon-green),
     var(--title-stroke-width) var(--title-stroke-width) 0
       var(--primary-neon-green);
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(3rem + 2vw);
   letter-spacing: 0.3rem;
 }
 
