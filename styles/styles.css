@@ -757,7 +757,6 @@ section {
 
 button {
   padding: 0.5rem 2rem;
-  font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -765,6 +764,9 @@ button {
   margin-bottom: 2rem;
 }
 
+.home-container button {
+  font-family: 'Barlow Condensed', sans-serif;
+}
 .index-section-about button {
   background-color: var(--primary-black);
   color: var(--primary-white);
