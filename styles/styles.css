@@ -596,8 +596,8 @@ main h1 span {
 .index-section-info {
   background-color: var(--primary-neon-blue);
   border-bottom: 15px solid var(--all-black);
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* display: grid; */
+  /* grid-template-columns: repeat(4, 1fr); */
   grid-template-rows: auto;
   grid-row: span 2;
 }
@@ -684,6 +684,17 @@ main h1 span {
   line-height: 2rem;
   color: var(--primary-white);
   margin: 0.5rem 0;
+}
+
+.about-anchor {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: -8rem;
+}
+
+.index-section-info > * {
+  display: block;
 }
 
 .tag {
@@ -1054,7 +1065,7 @@ img.decorative-S-blue {
   }
   .index-section-info {
     display: grid;
-    grid-template-columns: subgrid;
+    /* grid-template-columns: subgrid; */
     /* grid-template-rows: subgrid; */
     grid-column: 4/8;
     grid-row: 1/3;
