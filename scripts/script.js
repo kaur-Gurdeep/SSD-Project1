@@ -42,7 +42,7 @@ document
   .addEventListener('click', function () {
     showInfo(
       'Gurdeep Kaur',
-      'I love spending my vacations in Whistler, enjoying the gondola rides, stunning waterfalls, and the breathtaking Grouse Mountain. I’m passionate about outdoor adventures and exploring local vegetarian cuisine. I can’t wait to share my Whistler experiences and tips with fellow travelers!',
+      'I love spending my vacations in Whistler, enjoying the gondola rides, stunning waterfalls, and breathtaking mountain views. I’m passionate about outdoor adventures and exploring local vegetarian cuisine. I can’t wait to share my Whistler experiences and tips with fellow travelers!',
       'images/gurdeep.jpg'
     );
   });
@@ -58,7 +58,10 @@ document
 document
   .getElementById('team-member-iryna')
   .addEventListener('click', function () {
-    showInfo('Iryna Yampolska', "Iryna's info goes here", 'images/gurdeep.jpg');
+    showInfo
+      ('Iryna Yampolska', 
+      "Iryna enjoys discovering new places and connecting with nature through outdoor activities. She has a keen interest in travel, food, and exploring unique local experiences. Iryna looks forward to sharing her journey and recommendations with other adventurers!", 
+      'images/iryna.jpg');
   });
 
 // Simulates a click on a random element from a collection of HTMLElement with ID 'team'
