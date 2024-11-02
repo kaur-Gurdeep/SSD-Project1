@@ -575,19 +575,19 @@ main h2 {
   color: var(--primary-white);
 }
 
-/****************** HOMEPAGE nav ******************/
-
-.home-header {
-  z-index: 10;
-  position: absolute;
-  width: 100%;
-  top: 0;
-}
+/****************** HOMEPAGE NAV ******************/
 
 .home-header .nav-bar {
   background-color: var(--primary-black);
   position: fixed;
   width: 100vw;
+  padding: 0rem 1.25rem;
+}
+
+.home-header .logo {
+  height: 60px;
+  width: 60px;
+  margin: 0.8rem 0;
 }
 
 .home-header h1 {
@@ -617,17 +617,11 @@ main h2 {
 /****************** HOMEPAGE header ******************/
 
 .home-header {
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  top: 0;
   padding: 0;
-}
-
-.home-header .nav-bar {
-  padding: 0rem 1.25rem;
-}
-
-.home-header .logo {
-  height: 60px;
-  width: 60px;
-  margin: 0.8rem 0;
 }
 
 .home-header header p {
@@ -914,6 +908,13 @@ button {
   z-index: 0;
   margin-top: var(--banner-desktop-height);
   background-color: var(--primary-black);
+}
+
+.home-header,
+.home-container,
+.home-footer {
+  width: 100vw;
+  overflow: hidden;
 }
 
 .home-container {
