@@ -106,11 +106,16 @@ header h1 {
   font-weight: bold;
 }
 
- main.index-container {
+main.index-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../images/banner.jpg'); 
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('../images/banner.jpg');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -139,7 +144,7 @@ header h1 {
   border: none;
   border-radius: 30px;
   cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .index-container button a {
@@ -149,7 +154,7 @@ header h1 {
 .index-container button:hover {
   transform: scale(1.05);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-}  
+}
 .nav-bar nav a:hover,
 .nav-bar nav a:active,
 .nav-bar nav a:focus {
@@ -157,10 +162,10 @@ header h1 {
 }
 .eventLink {
   background-color: orangered;
-  color: white; 
-  padding: 10px 15px; 
+  color: white;
+  padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .eventLink:hover {
@@ -263,7 +268,7 @@ footer {
     transparent
   ); /* Softer gradient */
   padding: 3%;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .tmembers h2,
@@ -472,17 +477,6 @@ main h2 {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /*
   ========================================================================================
   HOMEPAGE styles start
@@ -502,23 +496,24 @@ main h2 {
   --nav-desktop-height: 60px;
 }
 
-main h1 span {
+.home-container h1 span {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;
-  font-size: 5rem;
-  line-height: 4rem;
+  font-size: calc(3rem + 5vw);
+  line-height: calc(3rem + 3vw);
   color: var(--primary-neon-green);
-  padding-left: 10px;
+  padding-left: 0.8rem;
 }
 
 .title-black-box {
-  padding-top: 0.5rem;
+  padding-top: 2vw;
   background-color: var(--primary-black);
 }
 
-.title-whistler {
+.home-container h1 .title-whistler {
+  padding-left: 1.4rem;
   font-family: 'Climate Crisis', serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -527,11 +522,12 @@ main h1 span {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--primary-black);
-  font-size: 4rem;
-  line-height: 3rem;
+  font-size: calc(2rem + 5vw);
+  line-height: calc(1rem + 3vw);
 }
 
-.title-festival {
+.home-container .title-festival {
+  padding-left: 1.2rem;
   font-family: 'Climate Crisis', serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -547,7 +543,8 @@ main h1 span {
       var(--primary-neon-green),
     var(--title-stroke-width) var(--title-stroke-width) 0
       var(--primary-neon-green);
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
+  line-height: calc(3rem + 2vw);
   letter-spacing: 0.3rem;
 }
 
@@ -633,22 +630,19 @@ main h1 span {
   margin: 0.8rem 0;
 }
 
-.home-header ul li:last-child a {
-  /* background-color: var(--primary-neon-blue);
-  border-radius: 0.15rem;
-  padding: 0.3rem;
-  color: var(--primary-black); */
-}
-
 .home-header header p {
   grid-area: logo;
   padding-left: 0px;
   margin-left: 0px;
 }
 
-.home-header ul li:last-child {
-  /* margin-bottom: 20px;
-  margin-left: 2rem; */
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /****************** HOMEPAGE sections ******************/
@@ -656,10 +650,7 @@ main h1 span {
 .index-section-info {
   background-color: var(--primary-neon-blue);
   border-bottom: 15px solid var(--all-black);
-  /* display: grid; */
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-rows: auto;
-  grid-row: span 2;
+  /* grid-template-rows: auto; */
 }
 
 .index-section-about {
@@ -730,6 +721,7 @@ main h1 span {
   font-size: 3rem;
   line-height: 3rem;
   color: var(--primary-black);
+  grid-row: 1;
 }
 
 .index-section-info h2,
@@ -765,7 +757,6 @@ main h1 span {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   color: var(--primary-neon-green);
-  /* background-color: var(--primary-medium-blue); */
   border: 1px solid var(--primary-neon-green);
   padding: 0.2rem 0.5rem;
   display: inline-block;
@@ -947,13 +938,17 @@ button {
 
 .home-footer {
   padding: 0rem 2rem 2rem 2rem;
-}
-
-.home-footer {
   background-color: var(--primary-black);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
+}
+
+.home-footer p {
+  grid-column: span 2;
+  width: 100vw;
+  text-align: left;
+  margin: 0.7rem 0rem;
 }
 
 .home-footer .logo {
@@ -1038,12 +1033,14 @@ button {
 }
 
 .home-footer div:nth-of-type(3) {
-  display: grid;
-  grid-template-columns: subgrid;
-  justify-items: start;
+  text-align: left;
   grid-column: span 2;
   gap: 1.5rem;
-  margin-bottom: 0.8rem;
+  padding: 0.8rem 0rem;
+  border-bottom: 1px solid grey;
+}
+.home-footer div:nth-of-type(3) a {
+  margin-right: 2rem;
 }
 
 .socials {
@@ -1059,14 +1056,6 @@ button {
   align-items: end;
   align-content: end;
   align-self: flex-end;
-}
-
-.home-footer p:last-of-type {
-  /* border-top: 2px solid rgba(255, 255, 255, 0.5);
-  padding-top: 0.5rem;
-  grid-column: span 2;
-  margin: 0;
-  text-align: left; */
 }
 
 .home-footer ul {
@@ -1109,33 +1098,10 @@ img.decorative-S-blue {
   right: 0;
 }
 
-/* mobile */
-/* .index-container {
-  background-image: url('../images/index/snowmountains2.jpg');
-  background-size: 50rem;
-  background-repeat: no-repeat;
-  display: flex;
+/* No need to show extra decoration elements on mobile */
+.info-bg-text {
+  display: none;
 }
-
-.index-container h1 {
-  font-size: 5rem;
-}
-
-.index-container article {
-  width: 100%;
-  text-align: center;
-  justify-self: center;
-  align-self: center;
-}
-
-.index-container button {
-  background-color: #003366;
-}
-
-.index-container a {
-  text-decoration: none;
-  color: white;
-} */
 
 /* 
   ========================================================================================
@@ -1145,18 +1111,12 @@ img.decorative-S-blue {
 
 /* using the same breakpoint as above */
 @media (min-width: 37.5em) {
-  .home-header ul li:last-child {
-    /* margin-bottom: 0px; */
-  }
-
   .index-content {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
   }
   .index-section-info {
     display: grid;
-    /* grid-template-columns: subgrid; */
-    /* grid-template-rows: subgrid; */
     grid-column: 4/8;
     grid-row: 1/3;
     width: 100%;
@@ -1166,8 +1126,10 @@ img.decorative-S-blue {
   }
 
   .info-bg-text {
+    display: block;
     grid-column: span 7;
     overflow: hidden;
+    justify-self: center;
 
     /* one line */
     text-overflow: clip;
@@ -1228,16 +1190,6 @@ img.decorative-S-blue {
     z-index: 1;
     align-self: start;
   }
-
-  /* desktop */
-  /* .index-container {
-    background-image: url('../images/index/snowmountains2.jpg');
-    background-size: 100vw;
-    height: 100vh;
-    display: flex;
-    width: 100%;
-  } */
-
   .home-container .index-section-about h2 {
     text-align: left;
   }
@@ -1281,7 +1233,6 @@ img.decorative-S-blue {
     display: grid;
     grid-column: span 2;
     grid-template-columns: subgrid;
-    /* grid-template-rows: min-content min-content 1fr; */
   }
 
   .index-section-activities article > div {
@@ -1351,12 +1302,3 @@ img.decorative-S-blue {
     right: 0;
   }
 }
-
-/* @media (min-width: 30em) {
-  .index-container {
-    background-size: 80rem;
-    background-color: #003366;
-  }
-} */
-
-
