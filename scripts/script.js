@@ -84,7 +84,9 @@ document
 document
   .getElementById('team-member-iryna')
   .addEventListener('click', function () {
-    showInfo('Iryna Yampolska', "Iryna's info goes here", 'images/gurdeep.jpg');
+    showInfo('Iryna Yampolska', 
+             "Iryna enjoys discovering new places and connecting with nature through outdoor activities. She has a keen interest in travel, food, and exploring unique local experiences. Iryna looks forward to sharing her journey and recommendations with other adventurers!", 
+             'images/placeholder-profile.jpg');
   });
 
 // Simulates a click on a random element from a collection of HTMLElement with ID 'team'
