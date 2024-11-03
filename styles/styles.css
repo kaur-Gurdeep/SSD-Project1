@@ -126,7 +126,7 @@ main.index-container {
 .index-container article {
   max-width: 800px;
 }
-.index-container h2 {
+.index-container h2 { 
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -479,7 +479,7 @@ main h2 {
 
 /*
   ========================================================================================
-  HOMEPAGE styles start
+  EVENTPAGE styles start
   ========================================================================================
 */
 
@@ -576,7 +576,7 @@ main h2 {
   color: var(--primary-white);
 }
 
-/****************** HOMEPAGE NAV ******************/
+/****************** EVENTPAGE NAV ******************/
 
 .home-header .nav-bar {
   background-color: var(--primary-black);
@@ -620,7 +620,7 @@ main h2 {
   padding: 0;
 }
 
-/****************** HOMEPAGE header ******************/
+/****************** EVENTPAGE header ******************/
 
 .home-header {
   z-index: 10;
@@ -644,7 +644,7 @@ main h2 {
   user-select: none;
 }
 
-/****************** HOMEPAGE sections ******************/
+/****************** EVENTPAGE sections ******************/
 
 .index-section-info {
   background-color: var(--primary-neon-blue);
@@ -877,7 +877,7 @@ button {
   grid-column: span 1;
 }
 
-/****************** HOMEPAGE ******************/
+/****************** EVENTPAGE ******************/
 
 .home-container .banner {
   position: absolute;
@@ -937,7 +937,7 @@ button {
   display: none;
 }
 
-/****************** HOMEPAGE footer ******************/
+/****************** EVENTPAGE footer ******************/
 
 .home-footer {
   padding: 0rem 2rem 2rem 2rem;
@@ -1061,7 +1061,7 @@ button {
   color: var(--primary-black) !important;
 }
 
-/****************** HOMEPAGE Decorative ******************/
+/****************** EVENTPAGE Decorative ******************/
 
 .decorative-S-line {
   display: grid;
