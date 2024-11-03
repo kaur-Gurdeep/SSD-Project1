@@ -15,6 +15,33 @@
   btn.addEventListener('mousedown', (e) => {
     e.preventDefault();
   });
+
+  // For the events page - close mobile nav dropdown to go to section
+  const eventPage = d.getElementsByClassName('home-header');
+  if (eventPage && eventPage.length > 0) {
+    console.log('on event page');
+    // set listener on the navigation buttons
+    const eventMenuBtn = d.querySelectorAll('nav li a');
+    eventMenuBtn.forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        // override the default b/c of the nav bar overlap
+        e.preventDefault();
+        // Show the content
+        body.classList.toggle('show');
+        // calculate the section's offset from the top
+        const href = e.target.getAttribute('href');
+        const section = d.getElementsByName(href.substring(1))[0];
+        const padding = 8;
+        // calculate the navbar height
+        const navbar = document.querySelector('.home-header .nav-bar');
+        // smooth scrolling
+        window.scrollTo({
+          top: section.offsetTop - navbar.offsetHeight - padding,
+          behavior: 'smooth',
+        });
+      });
+    });
+  }
 })(document);
 
 //JavaScript for Our-team page
@@ -58,7 +85,9 @@ document
 document
   .getElementById('team-member-iryna')
   .addEventListener('click', function () {
-    showInfo('Iryna Yampolska', "Iryna's info goes here", 'images/gurdeep.jpg');
+    showInfo('Iryna Yampolska', 
+             "Iryna enjoys discovering new places and connecting with nature through outdoor activities. She has a keen interest in travel, food, and exploring unique local experiences. Iryna looks forward to sharing her journey and recommendations with other adventurers!", 
+             'images/placeholder-profile.jpg');
   });
 
 // Simulates a click on a random element from a collection of HTMLElement with ID 'team'

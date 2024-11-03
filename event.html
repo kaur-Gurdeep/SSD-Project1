@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel Explorer - Home</title>
 
+    <!-- Link to our stylesheet -->
+    <link href="styles/styles.css" rel="stylesheet" />
+
     <!-- Link to the Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,22 +23,14 @@
       href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Link to our stylesheet -->
-    <link href="styles/styles.css" rel="stylesheet" />
-
-    <!-- Link to our javaScript -->
-    <script defer src="scripts/script.js"></script>
   </head>
   <body>
     <header class="home-header">
-      <div class="nav-bar">  
-        <a href="#start">          
-          <img 
-          class="logo"
-          src="images/logo.svg"
-          alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
-        </a>
+      <div class="nav-bar">    
+        <img 
+        class="logo"
+        src="images/logo.svg"
+        alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
         <a href="#menu" class="menu-btn" id="menu-btn">&#9776;</a>
         <!-- <nav id = "menu"> -->
         <nav>
@@ -53,7 +48,7 @@
     <main class="home-container">
       <!-- Banner -->
       <div class="banner">
-        <a name="start"></a>
+        <a class="anchor anchor-start" name="start"></a>
         <!-- Header Text -->
         <h1>
           <span class="title-whistler">Whistler</span>
@@ -76,11 +71,11 @@
                 
       </div>
       <!--End of banner-->
-
       <!-- Section 1 -->
+
       <section class="index-content">         
-        <section class="index-section-info">
-          <a class="about-anchor" name="about"></a>
+        <section class="index-section-info">      
+          <a class="anchor anchor-about" name="about"></a>    
           <h2>
             <span class="highlight-outline">Welcome</span>
             <span>The Ultimate Winter Celebration </span>
@@ -125,11 +120,12 @@
         width="100%"
         />
 
-        <!-- BG text -->            
-        <p class="info-bg-text unselectable"><a name="activities">adventurous spirits</a></p>
+        <!-- BG text -->         
+        <p class="info-bg-text unselectable">adventurous spirits</p>
 
         <!-- Section 3 - Activities -->
         <section class="index-section-activities">
+          <a class="anchor anchor-activities" name="activities"></a>   
           <div>
             <h2>Activities</h2>
             <button><a href="about.html">See All Activities</a></button>  
@@ -186,12 +182,12 @@
           </div>
         </section>
 
-        <a name="team"></a>
         <!-- BG text -->
         <p class="info-bg-text unselectable">Snow Activities</p>  
 
         <!-- Section 4 - Team -->
         <section class="index-section-team">
+          <a class="anchor anchor-team" name="team"></a>
           <div>
             <h2>Team</h2>
             <button><a href="our-team.html">See Details</a></button>
@@ -241,38 +237,36 @@
     <!-- Footer -->
     <footer class="home-footer">
       <div>
-        <div>
-          <a href="#start">          
-            <img 
-            class="logo"
-            src="images/logo.svg"
-            alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
-          </a>
+        <div>    
+          <img 
+          class="logo"
+          src="images/logo.svg"
+          alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
           <h5>
             <span>Whistler</span> 
             <span>Ski + Snowboard</span> 
             <span>Festival</span>
-        </h5>  
+          </h5>  
         </div>
-                <!-- Socials -->
-                <div class="socials">
-                  <a href="#">
-                    <img src="images/social/instagram.svg"
-                    alt="Instagram logo" />
-                  </a>
-                  <a href="#">
-                    <img src="images/social/facebook.svg"
-                    alt="Facebook logo" />
-                  </a>
-                  <a href="#">
-                    <img src="images/social/tiktok.svg"
-                    alt="TikTok logo" />
-                  </a>
-                  <a href="#">
-                    <img src="images/social/youtube.svg"
-                    alt="Youtube logo" />
-                  </a>
-                </div>
+        <!-- Socials -->
+        <div class="socials">
+          <a href="#">
+            <img src="images/social/instagram.svg"
+            alt="Instagram logo" />
+          </a>
+          <a href="#">
+            <img src="images/social/facebook.svg"
+            alt="Facebook logo" />
+          </a>
+          <a href="#">
+            <img src="images/social/tiktok.svg"
+            alt="TikTok logo" />
+          </a>
+          <a href="#">
+            <img src="images/social/youtube.svg"
+            alt="Youtube logo" />
+          </a>
+        </div>
       </div>
       <div>
         <ul>

@@ -126,35 +126,35 @@ main.index-container {
 .index-container article {
   max-width: 800px;
 }
-.index-container h1 {
+.index-container h2 {
   font-family: 'Merriweather', serif;
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: white;
 }
 .index-container p {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
-.index-container button {
+.button-link {
+  display: inline-block;
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  color: #333;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.index-container button a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
   text-decoration: none;
-  color: orangered;
+  border-radius: 5px;
+  text-align: center;
 }
-.index-container button:hover {
+
+.button-link:hover {
+  background-color: #0056b3;
   transform: scale(1.05);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
 }
+
 .nav-bar nav a:hover,
 .nav-bar nav a:active,
 .nav-bar nav a:focus {
@@ -505,6 +505,7 @@ main h2 {
   line-height: calc(3rem + 3vw);
   color: var(--primary-neon-green);
   padding-left: 0.8rem;
+  z-index: 10;
 }
 
 .title-black-box {
@@ -580,8 +581,13 @@ main h2 {
 .home-header .nav-bar {
   background-color: var(--primary-black);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding: 0rem 1.25rem;
+}
+
+.home-header .nav-bar ul li:last-child {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .home-header .logo {
@@ -619,7 +625,6 @@ main h2 {
 .home-header {
   z-index: 10;
   position: absolute;
-  width: 100vw;
   top: 0;
   padding: 0;
 }
@@ -732,11 +737,8 @@ main h2 {
   margin: 0.5rem 0;
 }
 
-.about-anchor {
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: -8rem;
+.anchor {
+  height: 1px;
 }
 
 .index-section-info > * {
@@ -888,16 +890,16 @@ button {
 
 .home-container .banner h1 {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
   margin: 0;
 }
 
 .home-container .banner-img {
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-image: url('../images/index/skiiers1.jpg');
   background-size: cover;
@@ -913,7 +915,7 @@ button {
 .home-header,
 .home-container,
 .home-footer {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -947,7 +949,7 @@ button {
 
 .home-footer p {
   grid-column: span 2;
-  width: 100vw;
+  width: 100%;
   text-align: left;
   margin: 0.7rem 0rem;
 }
@@ -988,15 +990,6 @@ button {
 .home-footer h5 span {
   display: block;
   text-align: left;
-}
-
-.home-footer button {
-  background-color: var(--primary-neon-blue);
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.35rem 0.5rem;
-  border-radius: 0.15rem;
 }
 
 .home-footer div:nth-of-type(3) a,
@@ -1040,6 +1033,7 @@ button {
   padding: 0.8rem 0rem;
   border-bottom: 1px solid grey;
 }
+
 .home-footer div:nth-of-type(3) a {
   margin-right: 2rem;
 }
@@ -1088,10 +1082,10 @@ img.decorative-S-blue {
   z-index: 5;
 }
 img.decorative-S-green {
-  width: 70vw;
+  width: 70%;
   left: 0;
-  margin-top: -4vh;
-  margin-left: -20vw;
+  margin-top: -4%;
+  margin-left: -20%;
 }
 img.decorative-S-blue {
   width: 30vw;
@@ -1112,6 +1106,15 @@ img.decorative-S-blue {
 
 /* using the same breakpoint as above */
 @media (min-width: 37.5em) {
+  .anchor-about {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .home-header .nav-bar ul li:last-child {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0rem;
+  }
   .index-content {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -1288,18 +1291,19 @@ img.decorative-S-blue {
   img.decorative-S-blue {
     all: unset;
     position: absolute;
-    z-index: 5;
   }
   img.decorative-S-green {
-    width: 50vw;
+    width: 50%;
     left: 0;
-    margin-top: -10vw;
-    margin-left: -10vw;
+    max-width: 500px;
+    margin-top: -5%;
+    margin-left: -10%;
+    z-index: 5;
   }
   img.decorative-S-blue {
-    width: 30vw;
+    width: 30%;
     max-width: 400px;
-    margin-right: calc(-30vw / 1.5);
-    right: 0;
+    right: -15%;
+    z-index: 15;
   }
 }
