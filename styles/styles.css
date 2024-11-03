@@ -580,7 +580,7 @@ main h2 {
 .home-header .nav-bar {
   background-color: var(--primary-black);
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding: 0rem 1.25rem;
 }
 
@@ -619,7 +619,6 @@ main h2 {
 .home-header {
   z-index: 10;
   position: absolute;
-  width: 100vw;
   top: 0;
   padding: 0;
 }
@@ -888,7 +887,7 @@ button {
 
 .home-container .banner h1 {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   bottom: 0;
   z-index: 2;
   margin: 0;
@@ -897,7 +896,7 @@ button {
 .home-container .banner-img {
   position: absolute;
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background-position: center;
   background-image: url('../images/index/skiiers1.jpg');
   background-size: cover;
@@ -913,7 +912,7 @@ button {
 .home-header,
 .home-container,
 .home-footer {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -947,7 +946,7 @@ button {
 
 .home-footer p {
   grid-column: span 2;
-  width: 100vw;
+  width: 100%;
   text-align: left;
   margin: 0.7rem 0rem;
 }
@@ -988,15 +987,6 @@ button {
 .home-footer h5 span {
   display: block;
   text-align: left;
-}
-
-.home-footer button {
-  background-color: var(--primary-neon-blue);
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  padding: 0.35rem 0.5rem;
-  border-radius: 0.15rem;
 }
 
 .home-footer div:nth-of-type(3) a,
@@ -1040,6 +1030,7 @@ button {
   padding: 0.8rem 0rem;
   border-bottom: 1px solid grey;
 }
+
 .home-footer div:nth-of-type(3) a {
   margin-right: 2rem;
 }

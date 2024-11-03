@@ -27,5 +27,8 @@ Related to code
    - debugging top banner style
 3. how to override a user agent stylesheet?
    - look at the computed tab in DevTools
-
+4. why would 100vw sometimes extend past the browser width
+   - elements with absolute or fixed position can behave unexpectedly with vw
+   - check box-model
+   
 ============================== IRYNA ==============================
