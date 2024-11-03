@@ -601,7 +601,6 @@ main h2 {
 .home-header a {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
-  font-style: bold;
   text-transform: uppercase;
 }
 
@@ -631,11 +630,6 @@ main h2 {
 }
 
 .unselectable {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
