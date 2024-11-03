@@ -19,7 +19,6 @@
   // For the events page - close mobile nav dropdown to go to section
   const eventPage = d.getElementsByClassName('home-header');
   if (eventPage && eventPage.length > 0) {
-    console.log('on event page');
     // set listener on the navigation buttons
     const eventMenuBtn = d.querySelectorAll('nav li a');
     eventMenuBtn.forEach((btn) => {
@@ -30,7 +29,7 @@
         body.classList.toggle('show');
         // calculate the section's offset from the top
         const href = e.target.getAttribute('href');
-        const section = d.getElementsByName(href.substring(1))[0];
+        const section = d.getElementById(href.substring(1));
         const padding = 8;
         // calculate the navbar height
         const navbar = document.querySelector('.home-header .nav-bar');

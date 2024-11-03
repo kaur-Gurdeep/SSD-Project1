@@ -25,19 +25,20 @@
   </head>
   <body>
     <header class="home-header">
-      <div class="nav-bar">    
-        <img 
-        class="logo"
-        src="images/logo.svg"
-        alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
+      <div class="nav-bar">
+        <img
+          class="logo"
+          src="images/logo.svg"
+          alt="A madeup logo for the Whistler Ski + Snowboard Festival"
+        />
         <a href="#menu" class="menu-btn" id="menu-btn">&#9776;</a>
         <!-- <nav id = "menu"> -->
         <nav>
           <ul>
-            <li><a href="#start">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#anchor-start">Home</a></li>
+            <li><a href="#anchor-about">About</a></li>
+            <li><a href="#anchor-activities">Activities</a></li>
+            <li><a href="#anchor-team">Team</a></li>
           </ul>
         </nav>
       </div>
@@ -47,7 +48,7 @@
     <main class="home-container">
       <!-- Banner -->
       <div class="banner">
-        <a class="anchor anchor-start" name="start"></a>
+        <a class="anchor" id="anchor-start"></a>
         <!-- Header Text -->
         <h1>
           <span class="title-whistler">Whistler</span>
@@ -65,16 +66,15 @@
         /> -->
 
         <!-- Decorative element - no alt text -->
-        <img class="decorative-S-blue" src="images/index/S-blue.png" />
-        <img class="decorative-S-green" src="images/index/S-green.png" />
-                
+        <img class="decorative-S-blue" alt="" src="images/index/S-blue.png" />
+        <img class="decorative-S-green" alt="" src="images/index/S-green.png" />
       </div>
       <!--End of banner-->
       <!-- Section 1 -->
 
-      <section class="index-content">         
-        <section class="index-section-info">      
-          <a class="anchor anchor-about" name="about"></a>    
+      <div class="index-content">
+        <section class="index-section-info">
+          <a class="anchor" id="anchor-about"></a>
           <h2>
             <span class="highlight-outline">Welcome</span>
             <span>The Ultimate Winter Celebration </span>
@@ -96,9 +96,9 @@
         </section>
 
         <!-- Photo -->
-        <img src="images/index/groupofpeople.jpg"
-        alt="Group of skiiers standing and waiting on their skiis in the snow"
-        width="100%"
+        <img
+          src="images/index/groupofpeople.jpg"
+          alt="Group of skiiers standing and waiting on their skiis in the snow"
         />
 
         <!-- BG text -->
@@ -110,24 +110,24 @@
             <span>Where adventurous spirits</span>
             <span class="highlight-outline">Go all out</span>
           </h2>
-          <button><a href="about.html">Discover More</a></button>
+          <a class="custom-button" href="about.html">Discover More</a>
         </section>
 
         <!-- Photo -->
-        <img src="images/index/snowymountains1.jpg"
-        alt="Group of skiiers standing and waiting on their skiis in the snow"
-        width="100%"
+        <img
+          src="images/index/snowymountains1.jpg"
+          alt="Group of skiiers standing and waiting on their skiis in the snow"
         />
 
-        <!-- BG text -->         
+        <!-- BG text -->
         <p class="info-bg-text unselectable">adventurous spirits</p>
 
         <!-- Section 3 - Activities -->
         <section class="index-section-activities">
-          <a class="anchor anchor-activities" name="activities"></a>   
+          <a class="anchor" id="anchor-activities"></a>
           <div>
             <h2>Activities</h2>
-            <button><a href="about.html">See All Activities</a></button>  
+            <a class="custom-button" href="about.html">See All Activities</a>
           </div>
 
           <div>
@@ -136,22 +136,22 @@
                 src="./images/index/skiier.jpg"
                 alt="Skiier speeding by with a bloom of snow trailing behind"
               />
-            <div>
-              <h3>Ski Race Extreme</h3>
-              <div class="tag">Skiing</div>
-            </div>
+              <div>
+                <h3>Ski Race Extreme</h3>
+                <div class="tag">Skiing</div>
+              </div>
             </article>
             <!-- end of one activity  -->
-  
+
             <article>
               <img
                 src="./images/index/snowboarder.jpg"
                 alt="Snowboarder in flight as he is moving down a snowy slope"
               />
-             <div>
+              <div>
                 <h3>Snowboard Blitz Battle</h3>
                 <div class="tag">Snowboarding</div>
-             </div>
+              </div>
             </article>
             <!-- end of one activity  -->
 
@@ -160,10 +160,10 @@
                 src="./images/index/musicstage.jpg"
                 alt="Crowds looking at a performance on stage"
               />
-             <div>
-              <h3>Music Concert Series</h3>
-              <div class="tag">Entertainment</div>
-             </div>
+              <div>
+                <h3>Music Concert Series</h3>
+                <div class="tag">Entertainment</div>
+              </div>
             </article>
             <!-- end of one activity  -->
 
@@ -172,113 +172,105 @@
                 src="./images/index/theatre.jpg"
                 alt="Red empty chairs facing a theatre that is playing a movie"
               />
-            <div>
-              <h3>72-hr Film Frenzy</h3>
-              <div class="tag">Entertainment</div>
-            </div>
+              <div>
+                <h3>72-hr Film Frenzy</h3>
+                <div class="tag">Entertainment</div>
+              </div>
             </article>
             <!-- end of one activity  -->
           </div>
+          <!-- end of all activities -->
         </section>
+        <!-- end of activity section -->
 
         <!-- BG text -->
-        <p class="info-bg-text unselectable">Snow Activities</p>  
+        <p class="info-bg-text unselectable">Snow Activities</p>
 
         <!-- Section 4 - Team -->
         <section class="index-section-team">
-          <a class="anchor anchor-team" name="team"></a>
+          <a class="anchor" id="anchor-team"></a>
           <div>
             <h2>Team</h2>
-            <button><a href="our-team.html">See Details</a></button>
+            <a class="custom-button" href="our-team.html">See Details</a>
           </div>
+
           <div>
-          <article>
-            <img
-              src="./images/gurdeep.jpg"
-              alt="Gurdeep sitting on a rock at the beach"
-            />
-            <p>Gurdeep</p>
-          </article>
+            <article>
+              <img
+                src="./images/gurdeep.jpg"
+                alt="Gurdeep sitting on a rock at the beach"
+              />
+              <h3>Gurdeep</h3>
+            </article>
 
-          <article>
-            <img
-              src="./images/trudy.jpg"
-              alt="Trudy in a room of human-sized balls inside teamLabs in Tokyo"
-            />
-            <p>Trudy</p>
-          </article>
+            <article>
+              <img
+                src="./images/trudy.jpg"
+                alt="Trudy in a room of human-sized balls inside teamLabs in Tokyo"
+              />
+              <h3>Trudy</h3>
+            </article>
 
-          <article>
-            <img
-              src="./images/placeholder-profile.jpg"
-              alt="Snowboarder in purple moving down the snowy mountain"
-            />
-            <p>Iryana</p>
-          </article>
+            <article>
+              <img
+                src="./images/placeholder-profile.jpg"
+                alt="Snowboarder in purple moving down the snowy mountain"
+              />
+              <h3>Iryana</h3>
+            </article>
+          </div>
         </section>
 
         <!-- final photo -->
-        <img
-            src="images/banner.jpg"
-            alt="Beautifully snow-covered mountains"
-            width="100%"
-          />
+        <img src="images/banner.jpg" alt="Beautifully snow-covered mountains" />
 
-      <!-- decorative element -->
-       <div class="decorative-S-line">
-        <img  src="images/index/S-line.png" />
-       </div>
-    </div>
-
-      </section>
+        <!-- decorative element -->
+        <div class="decorative-S-line">
+          <img src="images/index/S-line.png" alt="" />
+        </div>
+      </div>
     </main>
 
     <!-- Footer -->
     <footer class="home-footer">
       <div>
-        <div>    
-          <img 
-          class="logo"
-          src="images/logo.svg"
-          alt="A madeup logo for the Whistler Ski + Snowboard Festival"/>
+        <div>
+          <img
+            class="logo"
+            src="images/logo.svg"
+            alt="A madeup logo for the Whistler Ski + Snowboard Festival"
+          />
           <h5>
-            <span>Whistler</span> 
-            <span>Ski + Snowboard</span> 
+            <span>Whistler</span>
+            <span>Ski + Snowboard</span>
             <span>Festival</span>
-          </h5>  
+          </h5>
         </div>
         <!-- Socials -->
         <div class="socials">
           <a href="#">
-            <img src="images/social/instagram.svg"
-            alt="Instagram logo" />
+            <img src="images/social/instagram.svg" alt="Instagram logo" />
           </a>
           <a href="#">
-            <img src="images/social/facebook.svg"
-            alt="Facebook logo" />
+            <img src="images/social/facebook.svg" alt="Facebook logo" />
           </a>
           <a href="#">
-            <img src="images/social/tiktok.svg"
-            alt="TikTok logo" />
+            <img src="images/social/tiktok.svg" alt="TikTok logo" />
           </a>
           <a href="#">
-            <img src="images/social/youtube.svg"
-            alt="Youtube logo" />
+            <img src="images/social/youtube.svg" alt="Youtube logo" />
           </a>
         </div>
       </div>
       <div>
         <ul>
-        
           <li><a href="#about">About</a></li>
           <li><a href="#activities">Activities</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="index.html">Back to main</a></li>
-          </li>
         </ul>
       </div>
       <div>
-
         <a href="#">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
       </div>

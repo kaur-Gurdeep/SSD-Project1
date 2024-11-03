@@ -571,11 +571,6 @@ main h2 {
   letter-spacing: 0.3rem;
 }
 
-.home-container button a {
-  text-decoration: none;
-  color: var(--primary-white);
-}
-
 /****************** HOMEPAGE NAV ******************/
 
 .home-header .nav-bar {
@@ -691,11 +686,23 @@ main h2 {
   width: 100%;
 }
 
+.index-content > img {
+  width: 100%;
+}
 .home-container .index-section-team h2 {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   color: white;
+}
+
+.home-container .index-section-team h3 {
+  margin-top: 0.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
 }
 
 .index-section-info,
@@ -811,28 +818,34 @@ button {
   margin-bottom: 2rem;
 }
 
-.home-container button {
+.home-container .custom-button {
+  display: block;
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 2rem;
   font-family: 'Barlow Condensed', sans-serif;
+  text-decoration: none;
+  color: var(--primary-white);
 }
-.index-section-about button {
+
+.index-section-about .custom-button {
   background-color: var(--primary-black);
   color: var(--primary-white);
   justify-self: center;
 }
 
-.index-section-activities button {
+.index-section-activities .custom-button {
   background-color: var(--primary-neon-green);
-  a {
-    color: var(--primary-black);
-  }
+  color: var(--primary-black);
 }
 
-.index-section-team button {
+.index-section-team .custom-button {
   background-color: var(--primary-neon-blue);
   justify-self: center;
-  a {
-    color: var(--primary-black);
-  }
+  color: var(--primary-black);
 }
 
 .index-section-activities > div:first-of-type {
@@ -1057,10 +1070,6 @@ button {
   margin: 0;
 }
 
-.home-footer button a {
-  color: var(--primary-black) !important;
-}
-
 /****************** HOMEPAGE Decorative ******************/
 
 .decorative-S-line {
@@ -1106,7 +1115,7 @@ img.decorative-S-blue {
 
 /* using the same breakpoint as above */
 @media (min-width: 37.5em) {
-  .anchor-about {
+  #anchor-about {
     grid-column: 1;
     grid-row: 1;
   }
@@ -1198,7 +1207,7 @@ img.decorative-S-blue {
     text-align: left;
   }
 
-  .home-container .index-section-about button {
+  .home-container .index-section-about .custom-button {
     align-self: start;
     justify-self: start;
   }
@@ -1277,7 +1286,7 @@ img.decorative-S-blue {
     text-align: left;
   }
 
-  .index-section-team > div:first-child > button {
+  .index-section-team > div:first-child > .custom-button {
     grid-column: 2/3;
     justify-self: center;
     align-self: center;
