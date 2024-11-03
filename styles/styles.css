@@ -505,6 +505,7 @@ main h2 {
   line-height: calc(3rem + 3vw);
   color: var(--primary-neon-green);
   padding-left: 0.8rem;
+  z-index: 10;
 }
 
 .title-black-box {
@@ -891,7 +892,7 @@ button {
   position: absolute;
   width: 100%;
   bottom: 0;
-  z-index: 2;
+  z-index: 10;
   margin: 0;
 }
 
@@ -1081,10 +1082,10 @@ img.decorative-S-blue {
   z-index: 5;
 }
 img.decorative-S-green {
-  width: 70vw;
+  width: 70%;
   left: 0;
-  margin-top: -4vh;
-  margin-left: -20vw;
+  margin-top: -4%;
+  margin-left: -20%;
 }
 img.decorative-S-blue {
   width: 30vw;
@@ -1290,18 +1291,19 @@ img.decorative-S-blue {
   img.decorative-S-blue {
     all: unset;
     position: absolute;
-    z-index: 5;
   }
   img.decorative-S-green {
-    width: 50vw;
+    width: 50%;
     left: 0;
-    margin-top: -10vw;
-    margin-left: -10vw;
+    max-width: 500px;
+    margin-top: -5%;
+    margin-left: -10%;
+    z-index: 5;
   }
   img.decorative-S-blue {
-    width: 30vw;
+    width: 30%;
     max-width: 400px;
-    margin-right: calc(-30vw / 1.5);
-    right: 0;
+    right: -15%;
+    z-index: 15;
   }
 }
