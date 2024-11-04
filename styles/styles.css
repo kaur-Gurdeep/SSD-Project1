@@ -638,7 +638,6 @@ main h2 {
 .index-section-info {
   background-color: var(--primary-neon-blue);
   border-bottom: 15px solid var(--all-black);
-  /* grid-template-rows: auto; */
 }
 
 .index-section-about {
@@ -1066,7 +1065,7 @@ button {
 
 /****************** HOMEPAGE Decorative ******************/
 
-.decorative-S-line {
+.decorative-s-line {
   display: grid;
   margin-top: -16vw;
   grid-column: span 7;
@@ -1074,23 +1073,23 @@ button {
   place-items: center;
 }
 
-.decorative-S-line > img {
+.decorative-s-line > img {
   width: 200%;
 }
 
-img.decorative-S-green,
-img.decorative-S-blue {
+img.decorative-s-green,
+img.decorative-s-blue {
   all: unset;
   position: absolute;
   z-index: 5;
 }
-img.decorative-S-green {
+img.decorative-s-green {
   width: 70%;
   left: 0;
   margin-top: -4%;
   margin-left: -20%;
 }
-img.decorative-S-blue {
+img.decorative-s-blue {
   width: 30vw;
   margin-right: calc(-30vw / 1.5);
   right: 0;
@@ -1290,12 +1289,12 @@ img.decorative-S-blue {
     grid-column: span 7;
   }
 
-  img.decorative-S-green,
-  img.decorative-S-blue {
+  img.decorative-s-green,
+  img.decorative-s-blue {
     all: unset;
     position: absolute;
   }
-  img.decorative-S-green {
+  img.decorative-s-green {
     width: 50%;
     left: 0;
     max-width: 500px;
@@ -1303,7 +1302,7 @@ img.decorative-S-blue {
     margin-left: -10%;
     z-index: 5;
   }
-  img.decorative-S-blue {
+  img.decorative-s-blue {
     width: 30%;
     max-width: 400px;
     right: -15%;
