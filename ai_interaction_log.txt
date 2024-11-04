@@ -1,3 +1,4 @@
+
 =========================== GURDEEP KAUR ===========================
 // Assistance from AI tool (ChatGPT):
 1. Updated the grid alignment for the "About" page using the following CSS: 
@@ -6,6 +7,9 @@
 3. Took help regarding adding alt text for images.
 4. To create a fading effect for a background image using CSS.
 4. How to scaleup image on hover.
+5. How can I resolve this error in console..
+   Uncaught TypeError: Cannot read properties of null (reading 'addEventListener') at script.js:69:3
+
 
 ============================== TRUDY ==============================
 
