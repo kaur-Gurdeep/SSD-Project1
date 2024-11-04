@@ -479,7 +479,7 @@ main h2 {
 
 /*
   ========================================================================================
-  HOMEPAGE styles start
+  EVENTPAGE styles start
   ========================================================================================
 */
 
@@ -571,7 +571,7 @@ main h2 {
   letter-spacing: 0.3rem;
 }
 
-/****************** HOMEPAGE NAV ******************/
+/****************** EVENTPAGE NAV ******************/
 
 .home-header .nav-bar {
   background-color: var(--primary-black);
@@ -614,7 +614,7 @@ main h2 {
   padding: 0;
 }
 
-/****************** HOMEPAGE header ******************/
+/****************** EVENTPAGE header ******************/
 
 .home-header {
   z-index: 10;
@@ -633,7 +633,7 @@ main h2 {
   user-select: none;
 }
 
-/****************** HOMEPAGE sections ******************/
+/****************** EVENTPAGE sections ******************/
 
 .index-section-info {
   background-color: var(--primary-neon-blue);
@@ -883,7 +883,7 @@ button {
   grid-column: span 1;
 }
 
-/****************** HOMEPAGE ******************/
+/****************** EVENTPAGE ******************/
 
 .home-container .banner {
   position: absolute;
@@ -943,7 +943,7 @@ button {
   display: none;
 }
 
-/****************** HOMEPAGE footer ******************/
+/****************** EVENTPAGE footer ******************/
 
 .home-footer {
   padding: 0rem 2rem 2rem 2rem;
@@ -1063,7 +1063,7 @@ button {
   margin: 0;
 }
 
-/****************** HOMEPAGE Decorative ******************/
+/****************** EVENTPAGE Decorative ******************/
 
 .decorative-s-line {
   display: grid;
@@ -1132,13 +1132,12 @@ img.decorative-s-blue {
   }
 
   .info-bg-text {
+    all: inherit;
     display: block;
     grid-column: span 7;
-    overflow: hidden;
     justify-self: center;
 
     /* one line */
-    text-overflow: clip;
     overflow: hidden;
     white-space: nowrap;
 
