@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function for event page navigation
   function setupEventPageNavigation() {
-    const eventPage = document.getElementsByClassName('home-header');
+    const eventPage = document.getElementsByClassName('event-header');
     if (eventPage && eventPage.length > 0) {
       const eventMenuBtn = document.querySelectorAll('nav li a');
       eventMenuBtn.forEach((btn) => {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
           const href = e.target.getAttribute('href');
           const section = document.getElementById(href.substring(1));
           const padding = 8;
-          const navbar = document.querySelector('.home-header .nav-bar');
+          const navbar = document.querySelector('.event-header .nav-bar');
           window.scrollTo({
             top: section?.offsetTop - navbar?.offsetHeight - padding || 0,
             behavior: 'smooth',
