@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Function for event page navigation
+
   function setupEventPageNavigation() {
     const eventPage = document.getElementsByClassName('event-header');
     if (eventPage && eventPage.length > 0) {
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
       iryna.addEventListener('click', function () {
         showInfo(
           'Iryna Yampolska',
-          'Iryna enjoys discovering new places and connecting with nature through outdoor activities. She has a keen interest in travel, food, and exploring unique local experiences. Iryna looks forward to sharing her journey and recommendations with other adventurers!',
-          'images/placeholder-profile.jpg'
+          'My name is Iryna Yampolska. I adore with travelling and exploring new places. My background is marketing managment and manager at bar&lounge. In my native country I worked in a huge marketing company. But in Canada I want change and try something new, this way I am studing right now in BCIT.',
+          'images/iryna.jpg'
         );
       });
     }
@@ -111,6 +111,4 @@ document.addEventListener('DOMContentLoaded', function () {
   setupTeamMemberInfo();
   simulateRandomClick();
 
-  // Optional automatic cycling
-  // setInterval(simulateRandomClick, 10000);
 });
